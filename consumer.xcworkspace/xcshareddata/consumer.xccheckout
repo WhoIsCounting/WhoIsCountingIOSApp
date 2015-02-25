@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>68E00144-2BA2-4E63-BB56-7ECCA400501E</string>
+	<key>IDESourceControlProjectName</key>
+	<string>consumer</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>40FCC097031B714C0E4EF2F0D8C25F3C56DB9CAA</key>
+		<string>https://github.com/WhoIsCounting/WhoIsCountingIOSApp.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>consumer.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>40FCC097031B714C0E4EF2F0D8C25F3C56DB9CAA</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/WhoIsCounting/WhoIsCountingIOSApp.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>40FCC097031B714C0E4EF2F0D8C25F3C56DB9CAA</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>40FCC097031B714C0E4EF2F0D8C25F3C56DB9CAA</string>
+			<key>IDESourceControlWCCName</key>
+			<string>WhoIsCountingIOSApp</string>
+		</dict>
+	</array>
+</dict>
+</plist>
