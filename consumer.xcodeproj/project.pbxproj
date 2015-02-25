@@ -49,7 +49,7 @@
 		A01511771A9CE87900EB1296 /* AddViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
 		A01511781A9CE87900EB1296 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		A01511791A9CE87900EB1296 /* Question.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
-		A01511811A9D2CBE00EB1296 /* VCProfile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VCProfile.swift; path = ../VCProfile.swift; sourceTree = "<group>"; };
+		A01511811A9D2CBE00EB1296 /* VCProfile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VCProfile.swift; sourceTree = "<group>"; };
 		A06647E51A9BAFA100DEDA3A /* consumer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = consumer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A06647E91A9BAFA100DEDA3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A06647EA1A9BAFA100DEDA3A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
