@@ -83,6 +83,8 @@ class TblVwCell: UITableViewCell {
         //var paths = [selectedIndexPath]
         //tabla.tableView!.reloadRowsAtIndexPaths(paths,withRowAnimation: UITableViewRowAnimation.Fade)
         
+        //MasterTableViewController.tableView.reloadData()
+        
         tabla.tableView!.reloadData()
 
         println("tapped")
