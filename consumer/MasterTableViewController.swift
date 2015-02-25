@@ -12,6 +12,8 @@ class MasterTableViewController: UITableViewController {
     
     var toDoItems:NSMutableArray = NSMutableArray()
     
+    var dm : DataManager = DataManager()
+    
     required init(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }
@@ -39,6 +41,7 @@ class MasterTableViewController: UITableViewController {
         //Register custom cell
         var nib = UINib(nibName: "TableViewCell", bundle: nil)
         self.tableView.registerNib(nib, forCellReuseIdentifier: "cell")
+        
         
         
         // Uncomment the following line to preserve selection between presentations

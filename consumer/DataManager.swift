@@ -167,15 +167,19 @@ class DataManager {
 
     func consumeAPI(url : String, dict : [String: AnyObject]?) {
         println("Perform Create Question")
-        http = Http()
         
+        getAPIAuth()
+        /*
+        //Autenticacion
+        http = Http()
         let googleConfig = GoogleConfig(
             clientId: "115814606132-24i7f5psvb3547h3g4o67vri014p6nd0.apps.googleusercontent.com",
             scopes:["https://www.googleapis.com/auth/userinfo.email"])
-        
         let gdModule = AccountManager.addGoogleAccount(googleConfig)
         self.http.authzModule = gdModule
-        //self.performUpload("https://whos-counting-1.appspot.com/_ah/api/whosCounting/v1/question", parameters: ["category":"Cultura", "question":"Sabes quienes fueron los Mayas?"])
+        //Fin Autenticacion
+        */
+        
         self.performUpload(url, parameters: dict)
     }
     
@@ -199,45 +203,37 @@ class DataManager {
     }
     
     
-    class func getAPIProfile(success: ((googleData: NSData!) -> Void)) {
-        println("pilas1")
-        //1
-        loadDataFromURL(NSURL(string: TransURL)!, completion:{(data, error) -> Void in
-            println("pilas2")
-            //2
-            if let urlData = data {
-                //3
-                success(googleData: urlData)
-                println("pilas3")
-            }
+    func getAPIProfile(completion: ((responseData: AnyObject!) -> Void)) {
+        println("Perform getAPIProfile")
+        self.getAPIAuth()
+        self.getAPIData("https://whos-counting-1.appspot.com/_ah/api/whosCounting/v1/profile", success:{ (data) in
+            completion(responseData: data)
         })
     }
     
-    func getAPIAuth(url : String) {
-        println("Perform Get Profile")
-        http = Http()
-        
-        let googleConfig = GoogleConfig(
-            clientId: "115814606132-24i7f5psvb3547h3g4o67vri014p6nd0.apps.googleusercontent.com",
-            scopes:["https://www.googleapis.com/auth/userinfo.email"])
-        
-        let gdModule = AccountManager.addGoogleAccount(googleConfig)
-        self.http.authzModule = gdModule
-        //self.getAPI("https://whos-counting-1.appspot.com/_ah/api/whosCounting/v1/profile", parameters: ["category":"Cultura", "question":"Sabes quienes fueron los Mayas?"])
-        self.getAPI(url)
-    }
-    
-    func getAPI(url: String) {
+    func getAPIData(url: String,success: ((responseData: AnyObject!) -> Void)){
         self.http.GET(url, completionHandler: {(response, error) in
+            println("GET Method done!")
             if (error != nil) {
                 self.presentAlert("Error", message: error!.localizedDescription)
                 println("Error" + error!.localizedDescription)
+                success(responseData: nil)
             } else {
                 self.presentAlert("Success", message: "Successfully uploaded!")
-                println("Success")
+                println("Success \n\(response!)")
+                //let data = (response!.toString() as NSString).dataUsingEncoding(NSUTF8StringEncoding)
+                
+                success(responseData: response!)
             }
         })
     }
     
-    
+    func getAPIAuth() {
+        http = Http()
+        let googleConfig = GoogleConfig(
+            clientId: "115814606132-24i7f5psvb3547h3g4o67vri014p6nd0.apps.googleusercontent.com",
+            scopes:["https://www.googleapis.com/auth/userinfo.email"])
+        let gdModule = AccountManager.addGoogleAccount(googleConfig)
+        self.http.authzModule = gdModule
+    }
 }

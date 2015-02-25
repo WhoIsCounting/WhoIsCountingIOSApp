@@ -15,11 +15,31 @@ class VCProfile: UIViewController {
     @IBOutlet weak var countryTxtF: UITextField! = UITextField()
     @IBOutlet weak var genderTxtF: UITextField! = UITextField()
     
+    var dm : DataManager = DataManager()
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        dm.getAPIProfile() { (googleData) -> Void in
+            println("hola \(googleData)")
+            let json = JSON(googleData)
+            
+            println(json.description)
+            
+            if let displayName = json["displayName"].string {
+                self.displayNameTxtF.text = displayName
+            }
+            if let mainEmail = json["mainEmail"].string {
+                self.mainEmailTxtF.text = mainEmail
+            }
+            if let country = json["country"].string {
+                self.countryTxtF.text = country
+            }
+            if let gender = json["gender"].string {
+                self.genderTxtF.text = gender
+            }
+            
+        }
     }
 
     override func didReceiveMemoryWarning() {
