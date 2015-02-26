@@ -8,14 +8,10 @@
 
 import Foundation
 
+var master: MasterTableViewController!
+
 class SharedObjects{
 
-    var master: MasterTableViewController
-    
-    init(){
-        let coder : NSCoder = NSCoder()
-        master = MasterTableViewController(coder: coder)
-    }
-
+    init(){ }
 
 }

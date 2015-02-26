@@ -18,7 +18,11 @@ class MasterTableViewController: UITableViewController {
     
     required init(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
+        
+        master = self
     }
+    
+    
     
     /*override init(style: UITableViewStyle) {
         super.init(style: style)
@@ -97,8 +101,7 @@ class MasterTableViewController: UITableViewController {
         //Para actualizar la tabla desde la celda
         cell.indice = indexPath
         cell.toDoData = toDoItems.objectAtIndex(indexPath.row) as NSMutableDictionary
-        cell.tabla = self
-        
+         
         return cell
     }
     
@@ -154,9 +157,4 @@ class MasterTableViewController: UITableViewController {
             detailViewController.toDoData = toDoItems.objectAtIndex(selectedIndexPath.row) as NSMutableDictionary
         }
     }
-    
-    class func doReloadData(){
-        //tableView.reloadData()
-    }
-
 }

@@ -11,7 +11,7 @@ import UIKit
 class TblVwCell: UITableViewCell {
 
     required init(coder aDecoder: NSCoder) {
-        self.tabla = MasterTableViewController(coder: aDecoder)
+        //self.tabla = MasterTableViewController(coder: aDecoder)
         super.init(coder: aDecoder)
         
     }
@@ -24,7 +24,7 @@ class TblVwCell: UITableViewCell {
     
     var indice:NSIndexPath = NSIndexPath()
     var toDoData:NSMutableDictionary = NSMutableDictionary()
-    var tabla:MasterTableViewController
+    //var tabla:MasterTableViewController
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -76,17 +76,16 @@ class TblVwCell: UITableViewCell {
         var itemListFromUserDefaults:NSMutableArray? = userDefaults.objectForKey("itemList") as? NSMutableArray
         
         if (itemListFromUserDefaults != nil) {
-            tabla.toDoItems = itemListFromUserDefaults!
+            master.toDoItems = itemListFromUserDefaults!
         }
         //tabla.toDoItems.removeObjectAtIndex(indice.row)
 
         //var paths = [selectedIndexPath]
         //tabla.tableView!.reloadRowsAtIndexPaths(paths,withRowAnimation: UITableViewRowAnimation.Fade)
         
-        //MasterTableViewController.tableView.reloadData()
-        
-        tabla.tableView!.reloadData()
+        master.tableView!.reloadData()
 
+        
         println("tapped")
         println(indice.row)
         println("# \(count)")
