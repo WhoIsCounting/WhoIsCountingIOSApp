@@ -14,6 +14,8 @@ class MasterTableViewController: UITableViewController {
     
     var dm : DataManager = DataManager()
     
+   
+    
     required init(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }
@@ -103,7 +105,6 @@ class MasterTableViewController: UITableViewController {
     override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat { //Método para darle altura a cada fila
         return 100
     }
-    
     
     
     /*
