@@ -11,11 +11,47 @@ import UIKit
 class TVCUserQuestions: UITableViewController {
 
     var toDoItems:NSMutableArray = NSMutableArray()
-    
-    var dm : DataManager = DataManager()
+    var json:JSON!
+    var rows:Int = 0
     
     required init(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
+        userQ = self
+        
+        dataM.consumeAPI("https://whos-counting-1.appspot.com/_ah/api/whosCounting/v1/getQuestionsCreated", dict: Dictionary()) { (googleData) -> Void in
+            //println("hola \(googleData)")
+            self.json = JSON(googleData)
+            
+            println(self.json.description)
+            
+            if let displayName = self.json["displayName"].string {
+                //self.displayNameTxtF.text = displayName
+            }
+            if let mainEmail = self.json["mainEmail"].string {
+                //self.mainEmailTxtF.text = mainEmail
+            }
+            if let country = self.json["country"].string {
+                //self.countryTxtF.text = country
+            }
+            if let gender = self.json["gender"].string {
+                //self.genderTxtF.text = gender
+            }
+            println(self.json["items"][0]["question"].string!)
+            
+            if let camino = self.json["items"][0]["ido"].int  {
+                println(camino)
+            }
+            
+            
+            println(self.json["items"][1]["question"].string!)
+            //println(self.toDoItems.objectAtIndex(0)["itemCount"])
+            //let s: String = self.toDoItems[0]["itemTitle"] as String
+            //println(s)
+            
+            //self.toDoItems = json["items"].array
+            self.rows = self.json["items"].count
+        }
+        
     }
     
     /*override init(style: UITableViewStyle) {
@@ -28,7 +64,7 @@ class TVCUserQuestions: UITableViewController {
         var itemListFromUserDefaults:NSMutableArray? = userDefaults.objectForKey("itemList") as? NSMutableArray
         
         if (itemListFromUserDefaults != nil) {
-            toDoItems = itemListFromUserDefaults!
+            //toDoItems = itemListFromUserDefaults!
         }
         
         self.tableView.reloadData()
@@ -41,6 +77,9 @@ class TVCUserQuestions: UITableViewController {
         //Register custom cell
         var nib = UINib(nibName: "TableViewCell", bundle: nil)
         self.tableView.registerNib(nib, forCellReuseIdentifier: "cell")
+        
+        
+        
         
         
         
@@ -71,16 +110,17 @@ class TVCUserQuestions: UITableViewController {
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         //Acá debe colocarse el número de preguntas que se quiera mostrar y haya obtenido de la DB.
-        return toDoItems.count
+        
+        return self.rows
     }
     
-    
+    /*
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
         let cell:TblVwCell = self.tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) as TblVwCell
         var toDoItem:NSDictionary = toDoItems.objectAtIndex(indexPath.row) as NSDictionary
         
-        
+    
         var count: Int
         if (toDoItem.objectForKey("itemCount") != nil) {
             count = toDoItem.objectForKey("itemCount") as Int!
@@ -95,8 +135,33 @@ class TVCUserQuestions: UITableViewController {
         //Para actualizar la tabla desde la celda
         cell.indice = indexPath
         cell.toDoData = toDoItems.objectAtIndex(indexPath.row) as NSMutableDictionary
-        //cell.tabla = self
         
+        return cell
+    }
+    */
+    
+    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        
+        let cell:TblVwCell = self.tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) as TblVwCell
+        //var toDoItem:NSDictionary = json["items"][indexPath.row].dictionaryObject!
+        
+        if let toDoItem:NSDictionary = json["items"][0].dictionaryObject{
+        
+        var count: Int
+        if (toDoItem.objectForKey("ido") != nil) {
+            count = toDoItem.objectForKey("ido") as Int!
+        } else { count = 0}
+        
+        cell.labelOLName.text = "# \(count) k"
+        cell.tvOLName.text = toDoItem.objectForKey("question") as? String
+        cell.tvOLName.userInteractionEnabled = false;
+        
+        cell.buttonOLName.setTitle("I Did", forState: UIControlState.Normal) //Nombre del boton
+        
+        //Para actualizar la tabla desde la celda
+        cell.indice = indexPath
+        cell.toDoData = toDoItems.objectAtIndex(indexPath.row) as NSMutableDictionary
+        }
         return cell
     }
     

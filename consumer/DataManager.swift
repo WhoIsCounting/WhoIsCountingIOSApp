@@ -139,33 +139,9 @@ class DataManager {
         task.resume()
     }
     
-    class func shareWithGoogleDrive() {
-        let googleConfig = GoogleConfig(
-            clientId: "115814606132-24i7f5psvb3547h3g4o67vri014p6nd0.apps.googleusercontent.com",
-            scopes:["https://www.googleapis.com/auth/userinfo.email"])
-        
-        let gdModule = OAuth2Module(config: googleConfig)
-        var http = Http()
-        http.authzModule = gdModule
-        
-        gdModule.requestAccess { (response:AnyObject?, error:NSError?) -> Void in
-            //let JSONData = JSON(["username":"jameson", "password":"password"])
-            
-            let credential = NSURLCredential(user: "lx.galvez@gmail.com",
-                password: "Lum20ggl",
-                persistence: .None)
-            
-            http.POST("https://whos-counting-1.appspot.com/_ah/api/whosCounting/v1/question", parameters: ["category":"jameson", "question":"password"],credential: credential, completionHandler: {(response, error) in
-                if (error != nil) {
-                    println("Error uploading file: \(error)")
-                } else {
-                    println("Successfully uploaded: " + response!.description)
-                }
-            })
-        }
-    }
+    
 
-    func consumeAPI(url : String, dict : [String: AnyObject]?) {
+    func consumeAPI(url : String, dict : [String: AnyObject]?, success: ((responseData: AnyObject!) -> Void)){
         println("Perform Create Question")
         
         getAPIAuth()
@@ -180,19 +156,8 @@ class DataManager {
         //Fin Autenticacion
         */
         
-        self.performUpload(url, parameters: dict)
-    }
-    
-    func performUpload(url: String, parameters: [String: AnyObject]?) {
-        self.http.POST(url, parameters: parameters, completionHandler: {(response, error) in
-            if (error != nil) {
-                self.presentAlert("Error", message: error!.localizedDescription)
-                println("Error" + error!.localizedDescription)
-            } else {
-                self.presentAlert("Success", message: "Successfully uploaded!")
-                println("Success")
-                println(response!)
-            }
+        self.postAPIData(url, parameters: dict, success:{ (data) in
+            success(responseData: data!)
         })
     }
     
@@ -202,6 +167,27 @@ class DataManager {
         //self.presentViewController(alert, animated: true, completion: nil)
     }
     
+    func postAPIData(url: String, parameters: [String: AnyObject]?, success: ((responseData: AnyObject!) -> Void)){
+        self.http.POST(url, parameters: parameters, completionHandler: {(response, error) in
+            if (error != nil) {
+                //self.presentAlert("Error", message: error!.localizedDescription)
+                println("Error " + error!.localizedDescription)
+            } else {
+                //self.presentAlert("Success", message: "Successfully uploaded!")
+                println("Success")
+                println(response!)
+                success(responseData: response!)
+            }
+        })
+    }
+    
+    func getAPIGetQuestionsCreated(completion: ((responseData: AnyObject!) -> Void)) {
+        println("Perform getAPIProfile")
+        self.getAPIAuth()
+        self.getAPIData("https://whos-counting-1.appspot.com/_ah/api/whosCounting/v1/getQuestionsCreated", success:{ (data) in
+            completion(responseData: data)
+        })
+    }
     
     func getAPIProfile(completion: ((responseData: AnyObject!) -> Void)) {
         println("Perform getAPIProfile")
@@ -235,5 +221,10 @@ class DataManager {
             scopes:["https://www.googleapis.com/auth/userinfo.email"])
         let gdModule = AccountManager.addGoogleAccount(googleConfig)
         self.http.authzModule = gdModule
+        /*
+        let credential = NSURLCredential(user: "lx.galvez@gmail.com",
+        password: "Lum20ggl",
+        persistence: .None)
+        */
     }
 }

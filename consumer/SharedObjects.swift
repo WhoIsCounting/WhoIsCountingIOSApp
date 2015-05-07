@@ -9,6 +9,9 @@
 import Foundation
 
 var master: MasterTableViewController!
+var userQ: TVCUserQuestions!
+
+var dataM: DataManager!
 
 class SharedObjects{
 

@@ -15,12 +15,10 @@ class VCProfile: UIViewController {
     @IBOutlet weak var countryTxtF: UITextField! = UITextField()
     @IBOutlet weak var genderTxtF: UITextField! = UITextField()
     
-    var dm : DataManager = DataManager()
-
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        dm.getAPIProfile() { (googleData) -> Void in
+        dataM.getAPIProfile() { (googleData) -> Void in
             println("hola \(googleData)")
             let json = JSON(googleData)
             

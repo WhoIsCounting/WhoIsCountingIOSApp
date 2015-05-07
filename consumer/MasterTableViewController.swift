@@ -12,7 +12,7 @@ class MasterTableViewController: UITableViewController {
     
     var toDoItems:NSMutableArray = NSMutableArray()
     
-    var dm : DataManager = DataManager()
+    //var dm : DataManager = DataManager()
     
    
     
@@ -20,6 +20,7 @@ class MasterTableViewController: UITableViewController {
         super.init(coder: aDecoder)
         
         master = self
+        dataM = DataManager()
     }
     
     
@@ -84,6 +85,7 @@ class MasterTableViewController: UITableViewController {
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
         let cell:TblVwCell = self.tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) as TblVwCell
+        cell.tvc = "master"
         var toDoItem:NSDictionary = toDoItems.objectAtIndex(indexPath.row) as NSDictionary
         
         
@@ -101,7 +103,7 @@ class MasterTableViewController: UITableViewController {
         //Para actualizar la tabla desde la celda
         cell.indice = indexPath
         cell.toDoData = toDoItems.objectAtIndex(indexPath.row) as NSMutableDictionary
-         
+        
         return cell
     }
     

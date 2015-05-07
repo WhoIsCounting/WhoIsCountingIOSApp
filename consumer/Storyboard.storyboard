@@ -46,7 +46,7 @@
         <!--Root View Controller-->
         <scene sceneID="m33-0a-yAX">
             <objects>
-                <tableViewController id="Hc3-0t-PI3" sceneMemberID="viewController">
+                <tableViewController id="Hc3-0t-PI3" customClass="TVCUserQuestions" customModule="consumer" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="Bgv-eI-h5f">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

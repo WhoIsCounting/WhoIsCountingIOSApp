@@ -15,8 +15,6 @@ class AddViewController: UIViewController {
     @IBOutlet weak var categoryTxtF: UITextView! = UITextView()
     @IBOutlet weak var questionTxtV: UITextView! = UITextView()
     
-    var dm : DataManager = DataManager()
-    
     required init(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }
@@ -37,8 +35,8 @@ class AddViewController: UIViewController {
     @IBAction func addButtonTapped(sender: AnyObject) {
         
         var jsonStr : [String: AnyObject] = ["category":"\(categoryTxtF.text)", "question":"\(questionTxtV.text)"]
-        dm.consumeAPI("https://whos-counting-1.appspot.com/_ah/api/whosCounting/v1/question", dict: jsonStr)
-
+        dataM.consumeAPI("https://whos-counting-1.appspot.com/_ah/api/whosCounting/v1/question", dict: jsonStr)  { (googleData) -> Void in
+        }
     
         var userDefaults:NSUserDefaults = NSUserDefaults.standardUserDefaults()
         var itemList:NSMutableArray? = userDefaults.objectForKey("itemList") as? NSMutableArray

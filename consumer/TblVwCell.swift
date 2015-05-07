@@ -24,7 +24,8 @@ class TblVwCell: UITableViewCell {
     
     var indice:NSIndexPath = NSIndexPath()
     var toDoData:NSMutableDictionary = NSMutableDictionary()
-    //var tabla:MasterTableViewController
+    
+    var tvc : String!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -65,30 +66,24 @@ class TblVwCell: UITableViewCell {
         
         mutableItemList.insertObject(dataSet, atIndex: indice.row)
         mutableItemList.removeObject(toDoData)
-        //
         
-        //
         userDefaults.removeObjectForKey("itemList")
         userDefaults.setObject(mutableItemList, forKey: "itemList")
         userDefaults.synchronize()
-
+        
+        
         userDefaults = NSUserDefaults.standardUserDefaults()
-        var itemListFromUserDefaults:NSMutableArray? = userDefaults.objectForKey("itemList") as? NSMutableArray
         
-        if (itemListFromUserDefaults != nil) {
-            master.toDoItems = itemListFromUserDefaults!
+        if (tvc == "master") {
+            var fromUserDefaults:NSMutableArray? = userDefaults.objectForKey("itemList") as? NSMutableArray
+            if (fromUserDefaults != nil) {
+                master.toDoItems = fromUserDefaults!
+                master.tableView!.reloadData()
+            }
         }
-        //tabla.toDoItems.removeObjectAtIndex(indice.row)
-
-        //var paths = [selectedIndexPath]
-        //tabla.tableView!.reloadRowsAtIndexPaths(paths,withRowAnimation: UITableViewRowAnimation.Fade)
         
-        master.tableView!.reloadData()
-
-        
-        println("tapped")
-        println(indice.row)
-        println("# \(count)")
+        //Debug
+        println("tapped index \(indice.row) and # \(count!)")
     }
 
 }
