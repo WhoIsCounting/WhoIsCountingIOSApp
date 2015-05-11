@@ -1,4 +1,7 @@
 # aerogear-ios-http  [![Build Status](https://travis-ci.org/aerogear/aerogear-ios-http.png)](https://travis-ci.org/aerogear/aerogear-ios-http)
+
+> **NOTE:**  The library has been tested with Xcode 6.3
+
 Thin layer to take care of your http requests working with NSURLSession. 
 Taking care of: 
 
@@ -9,6 +12,15 @@ Taking care of:
 * background processing support
 
 100% Swift.
+
+|                 | Project Info  |
+| --------------- | ------------- |
+| License:        | Apache License, Version 2.0  |
+| Build:          | CocoaPods  |
+| Documentation:  | http://aerogear.org/ios/  |
+| Issue tracker:  | https://issues.jboss.org/browse/AGIOS  |
+| Mailing lists:  | [aerogear-users](http://aerogear-users.1116366.n5.nabble.com/) ([subscribe](https://lists.jboss.org/mailman/listinfo/aerogear-users))  |
+|                 | [aerogear-dev](http://aerogear-dev.1069024.n5.nabble.com/) ([subscribe](https://lists.jboss.org/mailman/listinfo/aerogear-dev))  |
 
 ## Example Usage
 
@@ -84,15 +96,13 @@ To support the OAuth2 protocol, we have created a separate library [aerogear-ios
 
 Do you want to try it on your end? Follow next section steps.
 
-> **NOTE:**  The library has been tested with Xcode 6.1.1
-
 ### Build, test and play with aerogear-ios-http
 
 1. Clone this project
 
 2. Get the dependencies
 
-The project uses [aerogear-ios-httpstub](https://github.com/aerogear/aerogear-ios-httpstub) framework for stubbing its http network requests and utilizes [cocoapods](http://cocoapods.org) 0.36.0 pre-release for handling its dependencies. As a pre-requisite, install [cocoapods pre-release](http://blog.cocoapods.org/Pod-Authors-Guide-to-CocoaPods-Frameworks/) and then install the pod. On the root directory of the project run:
+The project uses [OHHTTPStubs](https://github.com/AliSoftware/OHHTTPStubs) framework for stubbing its http network requests and utilizes [cocoapods](http://cocoapods.org) 0.36 release for handling its dependencies. As a pre-requisite, install [cocoapods](http://blog.cocoapods.org/CocoaPods-0.36/) and then install the pod. On the root directory of the project run:
 ```bash
 pod install
 ```
@@ -102,7 +112,7 @@ pod install
 To add the library in your project, you can either use [Cocoapods](http://cocoapods.org) or manual install in your project. See the respective sections below for instructions:
 
 ### Using [Cocoapods](http://cocoapods.org)
-At this time, Cocoapods support for Swift frameworks is supported in a [pre-release](http://blog.cocoapods.org/Pod-Authors-Guide-to-CocoaPods-Frameworks/). In your ```Podfile``` add:
+Support for Swift frameworks is supported from [CocoaPods-0.36 release](http://blog.cocoapods.org/CocoaPods-0.36/) upwards. In your ```Podfile``` add:
 
 ```
 pod 'AeroGearHttp'
@@ -131,3 +141,20 @@ git submodule add https://github.com/aerogear/aerogear-ios-http.git
 
 If you run into any problems, please [file an issue](http://issues.jboss.org/browse/AEROGEAR) and/or ask our [user mailing list](https://lists.jboss.org/mailman/listinfo/aerogear-users). You can also join our [dev mailing list](https://lists.jboss.org/mailman/listinfo/aerogear-dev).  
 
+## Documentation
+
+For more details about the current release, please consult [our documentation](http://aerogear.org/ios/).
+
+## Development
+
+If you would like to help develop AeroGear you can join our [developer's mailing list](https://lists.jboss.org/mailman/listinfo/aerogear-dev), join #aerogear on Freenode, or shout at us on Twitter @aerogears.
+
+Also takes some time and skim the [contributor guide](http://aerogear.org/docs/guides/Contributing/)
+
+## Questions?
+
+Join our [user mailing list](https://lists.jboss.org/mailman/listinfo/aerogear-users) for any questions or help! We really hope you enjoy app development with AeroGear!
+
+## Found a bug?
+
+If you found a bug please create a ticket for us on [Jira](https://issues.jboss.org/browse/AGIOS) with some steps to reproduce it.

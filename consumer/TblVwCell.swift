@@ -45,11 +45,11 @@ class TblVwCell: UITableViewCell {
         
         
         var userDefaults:NSUserDefaults = NSUserDefaults()
-        var itemListArray:NSMutableArray = userDefaults.objectForKey("itemList") as NSMutableArray
+        var itemListArray:NSMutableArray = userDefaults.objectForKey("itemList") as! NSMutableArray
         var mutableItemList:NSMutableArray = NSMutableArray()
         
         for dict:AnyObject in itemListArray {
-            mutableItemList.addObject(dict as NSDictionary)
+            mutableItemList.addObject(dict as! NSDictionary)
             
         }
         

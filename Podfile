@@ -4,12 +4,13 @@ xcodeproj 'consumer.xcodeproj'
 platform :ios, '8.0'
 use_frameworks!
 
-pod 'AeroGearHttp', '0.2.0'
-pod 'AeroGearOAuth2', '0.2.0'
+pod 'AeroGearHttp'
+pod 'AeroGearOAuth2'
+pod 'SwiftyJSON'
 
 # due to swift compiler bug, disable the '-Fastest' optimization flag
 # for the 'AeroGearOAuth2' library
-unoptimized_pod_names = ['AeroGearOAuth2']
+unoptimized_pod_names = ['AeroGearAuth2']
 
 post_install do |installer_representation|
 targets = installer_representation.project.targets.select { |target|

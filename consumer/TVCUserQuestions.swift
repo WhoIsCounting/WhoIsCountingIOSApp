@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SwiftyJSON
 
 class TVCUserQuestions: UITableViewController {
 
@@ -142,14 +143,14 @@ class TVCUserQuestions: UITableViewController {
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
-        let cell:TblVwCell = self.tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) as TblVwCell
+        let cell:TblVwCell = self.tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) as! TblVwCell
         //var toDoItem:NSDictionary = json["items"][indexPath.row].dictionaryObject!
         
         if let toDoItem:NSDictionary = json["items"][0].dictionaryObject{
         
         var count: Int
         if (toDoItem.objectForKey("ido") != nil) {
-            count = toDoItem.objectForKey("ido") as Int!
+            count = toDoItem.objectForKey("ido") as! Int!
         } else { count = 0}
         
         cell.labelOLName.text = "# \(count) k"
@@ -160,7 +161,7 @@ class TVCUserQuestions: UITableViewController {
         
         //Para actualizar la tabla desde la celda
         cell.indice = indexPath
-        cell.toDoData = toDoItems.objectAtIndex(indexPath.row) as NSMutableDictionary
+        cell.toDoData = toDoItems.objectAtIndex(indexPath.row)as! NSMutableDictionary
         }
         return cell
     }
@@ -214,8 +215,8 @@ class TVCUserQuestions: UITableViewController {
         
         if (segue != nil && segue!.identifier == "showDetail") {
             var selectedIndexPath: NSIndexPath = self.tableView.indexPathForSelectedRow()!
-            var detailViewController: DetailViewController = segue!.destinationViewController as DetailViewController
-            detailViewController.toDoData = toDoItems.objectAtIndex(selectedIndexPath.row) as NSMutableDictionary
+            var detailViewController: DetailViewController = segue!.destinationViewController as! DetailViewController
+            detailViewController.toDoData = toDoItems.objectAtIndex(selectedIndexPath.row) as! NSMutableDictionary
         }
     }
     

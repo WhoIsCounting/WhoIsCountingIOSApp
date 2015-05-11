@@ -9,6 +9,7 @@
 import UIKit
 import AeroGearHttp
 import AeroGearOAuth2
+import SwiftyJSON
 
 class ViewController: UIViewController {
     

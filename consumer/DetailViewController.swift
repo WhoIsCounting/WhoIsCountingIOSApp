@@ -26,19 +26,19 @@ class DetailViewController: UIViewController {
         titleTextField.userInteractionEnabled=false
         notesTextView.userInteractionEnabled=false
         
-        titleTextField.text = toDoData.objectForKey("itemTitle") as String
-        notesTextView.text = toDoData.objectForKey("itemNote") as String
+        titleTextField.text = toDoData.objectForKey("itemTitle") as! String
+        notesTextView.text = toDoData.objectForKey("itemNote") as! String
         // Do any additional setup after loading the view.
     }
 
     @IBAction func deleteItem(sender: AnyObject) {
         
         var userDefaults:NSUserDefaults = NSUserDefaults()
-        var itemListArray:NSMutableArray = userDefaults.objectForKey("itemList") as NSMutableArray
+        var itemListArray:NSMutableArray = userDefaults.objectForKey("itemList") as! NSMutableArray
         var mutableItemList:NSMutableArray = NSMutableArray()
         
         for dict:AnyObject in itemListArray {
-         mutableItemList.addObject(dict as NSDictionary)
+         mutableItemList.addObject(dict as! NSDictionary)
             
         }
         

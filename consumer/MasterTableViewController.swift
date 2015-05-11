@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SwiftyJSON
 
 class MasterTableViewController: UITableViewController {
     
@@ -84,14 +85,14 @@ class MasterTableViewController: UITableViewController {
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
-        let cell:TblVwCell = self.tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) as TblVwCell
+        let cell:TblVwCell = self.tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) as! TblVwCell
         cell.tvc = "master"
-        var toDoItem:NSDictionary = toDoItems.objectAtIndex(indexPath.row) as NSDictionary
+        var toDoItem:NSDictionary = toDoItems.objectAtIndex(indexPath.row) as! NSDictionary
         
         
         var count: Int
         if (toDoItem.objectForKey("itemCount") != nil) {
-            count = toDoItem.objectForKey("itemCount") as Int!
+            count = toDoItem.objectForKey("itemCount")as! Int!
         } else { count = 0}
         
         cell.labelOLName.text = "# \(count) k"
@@ -102,7 +103,7 @@ class MasterTableViewController: UITableViewController {
         
         //Para actualizar la tabla desde la celda
         cell.indice = indexPath
-        cell.toDoData = toDoItems.objectAtIndex(indexPath.row) as NSMutableDictionary
+        cell.toDoData = toDoItems.objectAtIndex(indexPath.row) as! NSMutableDictionary
         
         return cell
     }
@@ -155,8 +156,8 @@ class MasterTableViewController: UITableViewController {
     
         if (segue != nil && segue!.identifier == "showDetail") {
             var selectedIndexPath: NSIndexPath = self.tableView.indexPathForSelectedRow()!
-            var detailViewController: DetailViewController = segue!.destinationViewController as DetailViewController
-            detailViewController.toDoData = toDoItems.objectAtIndex(selectedIndexPath.row) as NSMutableDictionary
+            var detailViewController: DetailViewController = segue!.destinationViewController as! DetailViewController
+            detailViewController.toDoData = toDoItems.objectAtIndex(selectedIndexPath.row) as! NSMutableDictionary
         }
     }
 }

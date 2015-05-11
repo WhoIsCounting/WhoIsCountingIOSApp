@@ -24,10 +24,10 @@
 		A06647F21A9BAFA200DEDA3A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A06647F11A9BAFA200DEDA3A /* Images.xcassets */; };
 		A06647F51A9BAFA200DEDA3A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A06647F31A9BAFA200DEDA3A /* LaunchScreen.xib */; };
 		A06648011A9BAFA200DEDA3A /* consumerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A06648001A9BAFA200DEDA3A /* consumerTests.swift */; };
-		A066480E1A9BC02100DEDA3A /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = A066480A1A9BC02100DEDA3A /* SwiftyJSON.swift */; };
 		A066480F1A9BC02100DEDA3A /* TopApps.json in Resources */ = {isa = PBXBuildFile; fileRef = A066480B1A9BC02100DEDA3A /* TopApps.json */; };
 		A06648101A9BC02100DEDA3A /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A066480C1A9BC02100DEDA3A /* DataManager.swift */; };
 		A06648111A9BC02100DEDA3A /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A066480D1A9BC02100DEDA3A /* AppModel.swift */; };
+		FCB3C4A81B0150A300942310 /* Pods.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5153254C20B479519E27D415 /* Pods.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +39,20 @@
 			remoteInfo = consumer;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FCB3C4A91B0150A400942310 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				FCB3C4A81B0150A300942310 /* Pods.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		3E0A2655EA18865D90964C08 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
@@ -64,7 +78,6 @@
 		A06647FA1A9BAFA200DEDA3A /* consumerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = consumerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A06647FF1A9BAFA200DEDA3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A06648001A9BAFA200DEDA3A /* consumerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = consumerTests.swift; sourceTree = "<group>"; };
-		A066480A1A9BC02100DEDA3A /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
 		A066480B1A9BC02100DEDA3A /* TopApps.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = TopApps.json; sourceTree = "<group>"; };
 		A066480C1A9BC02100DEDA3A /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		A066480D1A9BC02100DEDA3A /* AppModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppModel.swift; sourceTree = "<group>"; };
@@ -123,7 +136,6 @@
 				A001D6D31A9EAD49007FD131 /* SharedObjects.swift */,
 				A001D6D11A9E83DE007FD131 /* TVCUserQuestions.swift */,
 				A01511811A9D2CBE00EB1296 /* VCProfile.swift */,
-				A066480A1A9BC02100DEDA3A /* SwiftyJSON.swift */,
 				A066480B1A9BC02100DEDA3A /* TopApps.json */,
 				A066480C1A9BC02100DEDA3A /* DataManager.swift */,
 				A066480D1A9BC02100DEDA3A /* AppModel.swift */,
@@ -191,6 +203,7 @@
 				A06647E31A9BAFA100DEDA3A /* Resources */,
 				55ACC358FEA3A91BC7D01574 /* Embed Pods Frameworks */,
 				180C033BC3722B09DDAFAFA4 /* Copy Pods Resources */,
+				FCB3C4A91B0150A400942310 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -334,7 +347,6 @@
 			files = (
 				A015117F1A9CE87900EB1296 /* DetailViewController.swift in Sources */,
 				A001D6D41A9EAD49007FD131 /* SharedObjects.swift in Sources */,
-				A066480E1A9BC02100DEDA3A /* SwiftyJSON.swift in Sources */,
 				A015117B1A9CE87900EB1296 /* MasterTableViewController.swift in Sources */,
 				A01511821A9D2CBE00EB1296 /* VCProfile.swift in Sources */,
 				A015117E1A9CE87900EB1296 /* AddViewController.swift in Sources */,
@@ -472,6 +484,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -484,6 +497,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

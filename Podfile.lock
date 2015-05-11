@@ -1,14 +1,17 @@
 PODS:
-  - AeroGearHttp (0.2.0)
-  - AeroGearOAuth2 (0.2.0):
-    - AeroGearHttp (= 0.2.0)
+  - AeroGearHttp (0.3.0)
+  - AeroGearOAuth2 (0.3.0):
+    - AeroGearHttp (= 0.3.0)
+  - SwiftyJSON (2.2.0)
 
 DEPENDENCIES:
-  - AeroGearHttp (= 0.2.0)
-  - AeroGearOAuth2 (= 0.2.0)
+  - AeroGearHttp
+  - AeroGearOAuth2
+  - SwiftyJSON
 
 SPEC CHECKSUMS:
-  AeroGearHttp: da2e0884590168b43799f59176244ab8407dd6a4
-  AeroGearOAuth2: d2ac44e6206b1d44d23afe0ef3bfe108e8964652
+  AeroGearHttp: 8a233311c6fabb56c3c7be162305c4b0e05348fc
+  AeroGearOAuth2: efc582fdfc57471819db1b748739a3c188df1c48
+  SwiftyJSON: 0b3e6c07af17ff745e77e8e9984097b55c956e5c
 
 COCOAPODS: 0.37.1

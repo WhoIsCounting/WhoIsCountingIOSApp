@@ -50,7 +50,7 @@ public class OAuth2Module: AuthzModule {
     var applicationLaunchNotificationObserver: NSObjectProtocol?
     var applicationDidBecomeActiveNotificationObserver: NSObjectProtocol?
     var state: AuthorizationState
-
+    var webView: OAuth2WebViewController?
     /**
     Initialize an OAuth2 module
 
@@ -72,7 +72,9 @@ public class OAuth2Module: AuthzModule {
         }
 
         self.config = config
-        // TODO use timeout config paramter
+        if config.isWebView {
+            self.webView = OAuth2WebViewController()
+        }
         self.http = Http(baseURL: config.baseURL, requestSerializer: requestSerializer, responseSerializer:  responseSerializer)
         self.state = .AuthorizationStateUnknown
     }
@@ -90,6 +92,9 @@ public class OAuth2Module: AuthzModule {
         // from the server.
         applicationLaunchNotificationObserver = NSNotificationCenter.defaultCenter().addObserverForName(AGAppLaunchedWithURLNotification, object: nil, queue: nil, usingBlock: { (notification: NSNotification!) -> Void in
             self.extractCode(notification, completionHandler: completionHandler)
+            if ( self.webView != nil ) {
+                UIApplication.sharedApplication().keyWindow?.rootViewController?.dismissViewControllerAnimated(true, completion: nil)
+            }
         })
 
         // register to receive notification when the application becomes active so we
@@ -110,8 +115,16 @@ public class OAuth2Module: AuthzModule {
         self.state = .AuthorizationStatePendingExternalApproval
 
         // calculate final url
-        var params = "?scope=\(config.scope)&redirect_uri=\(config.redirectURL.urlEncode())&client_id=\(config.clientId)&response_type=code"
-        UIApplication.sharedApplication().openURL(NSURL(string: http.calculateURL(config.baseURL, url:config.authzEndpoint).absoluteString! + params)!)
+        let params = "?scope=\(config.scope)&redirect_uri=\(config.redirectURL.urlEncode())&client_id=\(config.clientId)&response_type=code"
+        let url = NSURL(string:http.calculateURL(config.baseURL, url:config.authzEndpoint).absoluteString! + params)
+        if let url = url {
+            if self.webView != nil {
+                self.webView!.targetURL = url
+                UIApplication.sharedApplication().keyWindow?.rootViewController?.presentViewController(self.webView!, animated: true, completion: nil)
+            } else {
+                UIApplication.sharedApplication().openURL(url)
+            }
+        }
     }
 
     /**
@@ -133,8 +146,8 @@ public class OAuth2Module: AuthzModule {
                 }
 
                 if let unwrappedResponse = response as? [String: AnyObject] {
-                    let accessToken: String = unwrappedResponse["access_token"] as NSString
-                    let expiration = unwrappedResponse["expires_in"] as NSNumber
+                    let accessToken: String = unwrappedResponse["access_token"] as! String
+                    let expiration = unwrappedResponse["expires_in"] as! NSNumber
                     let exp: String = expiration.stringValue
                     
                     self.oauth2Session.saveAccessToken(accessToken, refreshToken: unwrappedRefreshToken, accessTokenExpiration: exp, refreshTokenExpiration: nil)
@@ -153,24 +166,27 @@ public class OAuth2Module: AuthzModule {
     */
     public func exchangeAuthorizationCodeForAccessToken(code: String, completionHandler: (AnyObject?, NSError?) -> Void) {
         var paramDict: [String: String] = ["code": code, "client_id": config.clientId, "redirect_uri": config.redirectURL, "grant_type":"authorization_code"]
-
+        
         if let unwrapped = config.clientSecret {
             paramDict["client_secret"] = unwrapped
         }
-
+        
         http.POST(config.accessTokenEndpoint, parameters: paramDict, completionHandler: {(responseObject, error) in
             if (error != nil) {
                 completionHandler(nil, error)
                 return
             }
-
+            
             if let unwrappedResponse = responseObject as? [String: AnyObject] {
-                let accessToken: String = unwrappedResponse["access_token"] as NSString
-                let refreshToken: String = unwrappedResponse["refresh_token"] as NSString
-                let expiration = unwrappedResponse["expires_in"] as NSNumber
+                let accessToken: String = unwrappedResponse["access_token"] as! String
+                let refreshToken: String = unwrappedResponse["refresh_token"] as! String
+                let expiration = unwrappedResponse["expires_in"] as! NSNumber
                 let exp: String = expiration.stringValue
+                // expiration for refresh token is used in Keycloak
+                let expirationRefresh = unwrappedResponse["refresh_expires_in"] as? NSNumber
+                let expRefresh = expirationRefresh?.stringValue
                 
-                self.oauth2Session.saveAccessToken(accessToken, refreshToken: refreshToken, accessTokenExpiration: exp, refreshTokenExpiration: nil)
+                self.oauth2Session.saveAccessToken(accessToken, refreshToken: refreshToken, accessTokenExpiration: exp, refreshTokenExpiration: expRefresh)
                 completionHandler(accessToken, nil)
             }
         })
@@ -209,7 +225,7 @@ public class OAuth2Module: AuthzModule {
             }
             var paramDict: [String: String] = [:]
             if response != nil {
-                paramDict = ["access_token": response! as String]
+                paramDict = ["access_token": response! as! String]
             }
             if let userInfoEndpoint = self.config.userInfoEndpoint {
 
@@ -281,7 +297,7 @@ public class OAuth2Module: AuthzModule {
     // MARK: Internal Methods
 
     func extractCode(notification: NSNotification, completionHandler: (AnyObject?, NSError?) -> Void) {
-        let url: NSURL? = (notification.userInfo as [String: AnyObject])[UIApplicationLaunchOptionsURLKey] as? NSURL
+        let url: NSURL? = (notification.userInfo as! [String: AnyObject])[UIApplicationLaunchOptionsURLKey] as? NSURL
 
         // extract the code from the URL
         let code = self.parametersFromQueryString(url?.query)["code"]

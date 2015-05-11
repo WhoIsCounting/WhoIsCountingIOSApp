@@ -51,7 +51,7 @@ class AddViewController: UIViewController {
             var newMutableList:NSMutableArray = NSMutableArray()
             
             for dict:AnyObject in itemList! {
-                newMutableList.addObject(dict as NSDictionary)
+                newMutableList.addObject(dict as! NSDictionary)
             }
             userDefaults.removeObjectForKey("itemList")
             newMutableList.addObject(dataSet)

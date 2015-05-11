@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0510"
+   LastUpgradeVersion = "0640"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "73934B6A71AEA38A2A0F163B"
+               BlueprintIdentifier = "8480175DA3D847CD092916B0"
                BuildableName = "AeroGearOAuth2.framework"
                BlueprintName = "Pods-AeroGearOAuth2"
                ReferencedContainer = "container:Pods.xcodeproj">

@@ -36,8 +36,8 @@ class Question {
     
     
     init(diccionario d: NSMutableDictionary){
-        question = d.objectForKey("itemTitle") as String
-        count = d.objectForKey("itemCount") as String
+        question = d.objectForKey("itemTitle") as! String
+        count = d.objectForKey("itemCount")as! String
         answered = true
     }
     
