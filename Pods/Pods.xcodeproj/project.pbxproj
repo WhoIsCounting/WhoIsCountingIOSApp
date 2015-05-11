@@ -1,2047 +1,758 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0">
-<dict>
-	<key>archiveVersion</key>
-	<string>1</string>
-	<key>classes</key>
-	<dict/>
-	<key>objectVersion</key>
-	<string>46</string>
-	<key>objects</key>
-	<dict>
-		<key>00FA9CCC338BD32358F281EE</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>038555EE0339C169BF6E5554</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>1749220ADAF39A7FBF082181</string>
-				<string>C0C64AEE4CC4C6AB996C2CDC</string>
-				<string>8F5DA60A9FFED9F213E0D5CC</string>
-				<string>FF4A69D0F9FB7F5EB35C02A9</string>
-				<string>B22CBF88B8F7811D594F1946</string>
-				<string>2CB74F7817B054C590820543</string>
-				<string>7CC0B73B814FC0A97C86F0F1</string>
-				<string>7A2400B67A0454B004AE292B</string>
-				<string>12879ADC9A4EAD40CB107E27</string>
-				<string>AB764D9E5399D4A78C5B9ADF</string>
-				<string>CD447EF8CC1B094394B0A25A</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>03F9B62B6120FF226CFD9EED</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>F24B67C541695EB88ACAC50F</string>
-			</array>
-			<key>isa</key>
-			<string>PBXHeadersBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>04D21B6BDBA4D7F113552D9C</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>Security.framework</string>
-			<key>path</key>
-			<string>Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Security.framework</string>
-			<key>sourceTree</key>
-			<string>DEVELOPER_DIR</string>
-		</dict>
-		<key>0739C93B5B57D1C75751C2A2</key>
-		<dict>
-			<key>fileRef</key>
-			<string>2D77B8B588227EEE3C94D0EA</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>088A87C329745B74AE5538B7</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>Pods-AeroGearHttp-umbrella.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0C1BB0B1E56CD95C549FBC88</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>48B06461344AF038D5579D82</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>CURRENT_PROJECT_VERSION</key>
-				<string>1</string>
-				<key>DEFINES_MODULE</key>
-				<string>YES</string>
-				<key>DYLIB_COMPATIBILITY_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_CURRENT_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_INSTALL_NAME_BASE</key>
-				<string>@rpath</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>Target Support Files/Pods-AeroGearOAuth2/Pods-AeroGearOAuth2-prefix.pch</string>
-				<key>INFOPLIST_FILE</key>
-				<string>Target Support Files/Pods-AeroGearOAuth2/Info.plist</string>
-				<key>INSTALL_PATH</key>
-				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>8.0</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<array>
-					<string>$(inherited)</string>
-					<string>@executable_path/Frameworks</string>
-					<string>@loader_path/Frameworks</string>
-				</array>
-				<key>MODULEMAP_FILE</key>
-				<string>Target Support Files/Pods-AeroGearOAuth2/Pods-AeroGearOAuth2.modulemap</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>YES</string>
-				<key>PRODUCT_NAME</key>
-				<string>AeroGearOAuth2</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-				<key>SWIFT_OPTIMIZATION_LEVEL</key>
-				<string>-Onone</string>
-				<key>TARGETED_DEVICE_FAMILY</key>
-				<string>1,2</string>
-				<key>VERSIONING_SYSTEM</key>
-				<string>apple-generic</string>
-				<key>VERSION_INFO_PREFIX</key>
-				<string></string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>0E4FFC50B7B3B98F851153D4</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>Pods-dummy.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>11AF76B7F8CD03C5A719FA3F</key>
-		<dict>
-			<key>fileRef</key>
-			<string>17D169AE1F5E5B5444126081</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>122A13D11E404515F33F8369</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>BF3371A2C62843E38A27CD74</string>
-			</array>
-			<key>isa</key>
-			<string>PBXHeadersBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>12673FE73F61F38A633B06BD</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>52305908F4EA80B3C4E9010E</string>
-				<string>19E31B71CB4CEA0AFFEC799B</string>
-				<string>BAA51024B27B22DA67F44AAE</string>
-				<string>6960F584B63E126DA46845F8</string>
-				<string>EED5D278DD3AC1BB435395F0</string>
-				<string>D56BF2D50CF6F025252B7B06</string>
-				<string>EAF9AAFBADFFD9E75880BB9E</string>
-				<string>11AF76B7F8CD03C5A719FA3F</string>
-				<string>23164540DDAD606622650C74</string>
-				<string>0739C93B5B57D1C75751C2A2</string>
-				<string>B875940DE0674A609F0A63FD</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>126E29C03CF51AFB4691BC4A</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>6195233F2AF54ACD703666BF</string>
-				<string>2C703D4A1C0ECA6C3ECD80F0</string>
-				<string>6A6F79FB17A07ED69B003BBA</string>
-				<string>F529CC4F992C10F60CDD46C8</string>
-				<string>C9756BEF40B9C40270BCF2FA</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>12879ADC9A4EAD40CB107E27</key>
-		<dict>
-			<key>fileRef</key>
-			<string>141320648E72660D28945973</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>141320648E72660D28945973</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>name</key>
-			<string>ResponseSerializer.swift</string>
-			<key>path</key>
-			<string>AeroGearHttp/ResponseSerializer.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>16457123C81677F59310E30C</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>Pods-AeroGearOAuth2.modulemap</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>1749220ADAF39A7FBF082181</key>
-		<dict>
-			<key>fileRef</key>
-			<string>806A9FCEDFC836972D05F480</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>17D169AE1F5E5B5444126081</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>name</key>
-			<string>OpenIDClaim.swift</string>
-			<key>path</key>
-			<string>AeroGearOAuth2/OpenIDClaim.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>19E31B71CB4CEA0AFFEC799B</key>
-		<dict>
-			<key>fileRef</key>
-			<string>B9FEE4DCB73A5AEFC1D48CBD</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>23164540DDAD606622650C74</key>
-		<dict>
-			<key>fileRef</key>
-			<string>ED4211237B55D3AEC511C2DD</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>23C5DE1E050EC0A6D0234BAF</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXTargetDependency</string>
-			<key>name</key>
-			<string>Pods-AeroGearHttp</string>
-			<key>target</key>
-			<string>95186D2A1F60C0968E524CF6</string>
-			<key>targetProxy</key>
-			<string>FF30FC9EA1DBBB295F1163C8</string>
-		</dict>
-		<key>25E07A9C317E64237B0BE40F</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text</string>
-			<key>path</key>
-			<string>Pods-acknowledgements.markdown</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>26D2D19B8084AE3830DECF84</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>name</key>
-			<string>DateUtils.swift</string>
-			<key>path</key>
-			<string>AeroGearOAuth2/DateUtils.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>278AEE0F658D7CF6FEBE09A0</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>name</key>
-			<string>OAuth2Session.swift</string>
-			<key>path</key>
-			<string>AeroGearOAuth2/OAuth2Session.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>28807344DF8F0C654E53D4AC</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>45FD0659FDD9789FC7210798</string>
-				<string>04D21B6BDBA4D7F113552D9C</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>iOS</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>2998C0CA964EBC31A0EC4077</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Pods-acknowledgements.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>2C703D4A1C0ECA6C3ECD80F0</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>CB633FD88BDA11189E54DA21</string>
-				<string>28807344DF8F0C654E53D4AC</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Frameworks</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>2CB74F7817B054C590820543</key>
-		<dict>
-			<key>fileRef</key>
-			<string>EA6DC58D53F4C44D4333833E</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>2D77B8B588227EEE3C94D0EA</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>name</key>
-			<string>TrustedPersistantOAuth2Session.swift</string>
-			<key>path</key>
-			<string>AeroGearOAuth2/TrustedPersistantOAuth2Session.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>2E63E0F3EF04FE43FEFC0BD4</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>82EF9B6CAF5433ED8897A8C3</string>
-				<string>B9FEE4DCB73A5AEFC1D48CBD</string>
-				<string>26D2D19B8084AE3830DECF84</string>
-				<string>9F6F3DF0590029FDD2BF323D</string>
-				<string>906F51861821E91C1DBD5B94</string>
-				<string>F17D92D7A22E0FBF67B45A73</string>
-				<string>278AEE0F658D7CF6FEBE09A0</string>
-				<string>17D169AE1F5E5B5444126081</string>
-				<string>2D77B8B588227EEE3C94D0EA</string>
-				<string>4D4DE4DFADEBCBBA7621CB67</string>
-				<string>BF4A40D84921349C90FAD095</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>AeroGearOAuth2</string>
-			<key>path</key>
-			<string>AeroGearOAuth2</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>315EE5973AA26BE92CF40DBC</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.framework</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>AeroGearOAuth2.framework</string>
-			<key>path</key>
-			<string>AeroGearOAuth2.framework</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>387411B63A050E7880F76F76</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>98632E3A92C438E741AF1A07</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>3BFADAD68FB7441A273B4216</key>
-		<dict>
-			<key>fileRef</key>
-			<string>FDFBC63BA0C3A52C3E217E50</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>3D238150C25BA6E6B7EC3A90</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>5276AC82E23D9DE184465BD0</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>CURRENT_PROJECT_VERSION</key>
-				<string>1</string>
-				<key>DEFINES_MODULE</key>
-				<string>YES</string>
-				<key>DYLIB_COMPATIBILITY_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_CURRENT_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_INSTALL_NAME_BASE</key>
-				<string>@rpath</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>INFOPLIST_FILE</key>
-				<string>Target Support Files/Pods/Info.plist</string>
-				<key>INSTALL_PATH</key>
-				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>8.0</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<array>
-					<string>$(inherited)</string>
-					<string>@executable_path/Frameworks</string>
-					<string>@loader_path/Frameworks</string>
-				</array>
-				<key>MODULEMAP_FILE</key>
-				<string>Target Support Files/Pods/Pods.modulemap</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>YES</string>
-				<key>OTHER_LDFLAGS</key>
-				<string></string>
-				<key>OTHER_LIBTOOLFLAGS</key>
-				<string></string>
-				<key>PODS_ROOT</key>
-				<string>$(SRCROOT)</string>
-				<key>PRODUCT_NAME</key>
-				<string>Pods</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-				<key>TARGETED_DEVICE_FAMILY</key>
-				<string>1,2</string>
-				<key>VERSIONING_SYSTEM</key>
-				<string>apple-generic</string>
-				<key>VERSION_INFO_PREFIX</key>
-				<string></string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>40613980D8512147C3DD2442</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>F1D6132A03FF011E42A3B3DC</string>
-				<string>8C3C71D3446BE58BF9946EC7</string>
-				<string>25E07A9C317E64237B0BE40F</string>
-				<string>2998C0CA964EBC31A0EC4077</string>
-				<string>0E4FFC50B7B3B98F851153D4</string>
-				<string>DA34DE6A438F3F1E52D82D00</string>
-				<string>622B586A8FD452DE4CF8DE3B</string>
-				<string>F72044D02012B2CC7BD866B5</string>
-				<string>FDFBC63BA0C3A52C3E217E50</string>
-				<string>5276AC82E23D9DE184465BD0</string>
-				<string>E0DA36A91F31223D176C968B</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Pods</string>
-			<key>path</key>
-			<string>Target Support Files/Pods</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>40C8A49C49C8CE6FB732256B</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>F546F6357E933B517CB7881B</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>CURRENT_PROJECT_VERSION</key>
-				<string>1</string>
-				<key>DEFINES_MODULE</key>
-				<string>YES</string>
-				<key>DYLIB_COMPATIBILITY_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_CURRENT_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_INSTALL_NAME_BASE</key>
-				<string>@rpath</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>Target Support Files/Pods-AeroGearHttp/Pods-AeroGearHttp-prefix.pch</string>
-				<key>INFOPLIST_FILE</key>
-				<string>Target Support Files/Pods-AeroGearHttp/Info.plist</string>
-				<key>INSTALL_PATH</key>
-				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>8.0</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<array>
-					<string>$(inherited)</string>
-					<string>@executable_path/Frameworks</string>
-					<string>@loader_path/Frameworks</string>
-				</array>
-				<key>MODULEMAP_FILE</key>
-				<string>Target Support Files/Pods-AeroGearHttp/Pods-AeroGearHttp.modulemap</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>YES</string>
-				<key>PRODUCT_NAME</key>
-				<string>AeroGearHttp</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-				<key>TARGETED_DEVICE_FAMILY</key>
-				<string>1,2</string>
-				<key>VERSIONING_SYSTEM</key>
-				<string>apple-generic</string>
-				<key>VERSION_INFO_PREFIX</key>
-				<string></string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>40DEC1C8BBFC5CDC7C78CF04</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>48B06461344AF038D5579D82</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>CURRENT_PROJECT_VERSION</key>
-				<string>1</string>
-				<key>DEFINES_MODULE</key>
-				<string>YES</string>
-				<key>DYLIB_COMPATIBILITY_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_CURRENT_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_INSTALL_NAME_BASE</key>
-				<string>@rpath</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>Target Support Files/Pods-AeroGearOAuth2/Pods-AeroGearOAuth2-prefix.pch</string>
-				<key>INFOPLIST_FILE</key>
-				<string>Target Support Files/Pods-AeroGearOAuth2/Info.plist</string>
-				<key>INSTALL_PATH</key>
-				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>8.0</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<array>
-					<string>$(inherited)</string>
-					<string>@executable_path/Frameworks</string>
-					<string>@loader_path/Frameworks</string>
-				</array>
-				<key>MODULEMAP_FILE</key>
-				<string>Target Support Files/Pods-AeroGearOAuth2/Pods-AeroGearOAuth2.modulemap</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>NO</string>
-				<key>PRODUCT_NAME</key>
-				<string>AeroGearOAuth2</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-				<key>SWIFT_OPTIMIZATION_LEVEL</key>
-				<string>-Onone</string>
-				<key>TARGETED_DEVICE_FAMILY</key>
-				<string>1,2</string>
-				<key>VERSIONING_SYSTEM</key>
-				<string>apple-generic</string>
-				<key>VERSION_INFO_PREFIX</key>
-				<string></string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>43F1F41CDCB8AA07C55F8D8E</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>D19DE8987C8C639118D21923</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>45FD0659FDD9789FC7210798</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>Foundation.framework</string>
-			<key>path</key>
-			<string>Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Foundation.framework</string>
-			<key>sourceTree</key>
-			<string>DEVELOPER_DIR</string>
-		</dict>
-		<key>463DF485F25E9657DA431EC0</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES</string>
-				<key>CLANG_WARN_UNREACHABLE_CODE</key>
-				<string>YES</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>NO</string>
-				<key>ENABLE_NS_ASSERTIONS</key>
-				<string>NO</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>RELEASE=1</string>
-				</array>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>8.0</string>
-				<key>STRIP_INSTALLED_PRODUCT</key>
-				<string>NO</string>
-				<key>VALIDATE_PRODUCT</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>48B06461344AF038D5579D82</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>Pods-AeroGearOAuth2-Private.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>4D4DE4DFADEBCBBA7621CB67</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>name</key>
-			<string>UntrustedMemoryOAuth2Session.swift</string>
-			<key>path</key>
-			<string>AeroGearOAuth2/UntrustedMemoryOAuth2Session.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>51BC79680DA2D6185DB34627</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>B8B4B05CF11A908B54906932</string>
-				<string>463DF485F25E9657DA431EC0</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>52305908F4EA80B3C4E9010E</key>
-		<dict>
-			<key>fileRef</key>
-			<string>82EF9B6CAF5433ED8897A8C3</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>5276AC82E23D9DE184465BD0</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>Pods.debug.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>555EBF1F6D22C7C62EA468CE</key>
-		<dict>
-			<key>containerPortal</key>
-			<string>E4319E431CE3D95321B4F8FD</string>
-			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
-			<string>1</string>
-			<key>remoteGlobalIDString</key>
-			<string>95186D2A1F60C0968E524CF6</string>
-			<key>remoteInfo</key>
-			<string>Pods-AeroGearHttp</string>
-		</dict>
-		<key>5A9B5D5E424AA14CB5747C1A</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXTargetDependency</string>
-			<key>name</key>
-			<string>Pods-AeroGearHttp</string>
-			<key>target</key>
-			<string>95186D2A1F60C0968E524CF6</string>
-			<key>targetProxy</key>
-			<string>555EBF1F6D22C7C62EA468CE</string>
-		</dict>
-		<key>6195233F2AF54ACD703666BF</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text</string>
-			<key>name</key>
-			<string>Podfile</string>
-			<key>path</key>
-			<string>../Podfile</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-			<key>xcLanguageSpecificationIdentifier</key>
-			<string>xcode.lang.ruby</string>
-		</dict>
-		<key>622B586A8FD452DE4CF8DE3B</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.script.sh</string>
-			<key>path</key>
-			<string>Pods-frameworks.sh</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>627ABC132AD8AC6459765813</key>
-		<dict>
-			<key>fileRef</key>
-			<string>0E4FFC50B7B3B98F851153D4</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>6622ABBEFC8BEBB8ECF2C7C2</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>E0DA36A91F31223D176C968B</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>CURRENT_PROJECT_VERSION</key>
-				<string>1</string>
-				<key>DEFINES_MODULE</key>
-				<string>YES</string>
-				<key>DYLIB_COMPATIBILITY_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_CURRENT_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_INSTALL_NAME_BASE</key>
-				<string>@rpath</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>INFOPLIST_FILE</key>
-				<string>Target Support Files/Pods/Info.plist</string>
-				<key>INSTALL_PATH</key>
-				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>8.0</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<array>
-					<string>$(inherited)</string>
-					<string>@executable_path/Frameworks</string>
-					<string>@loader_path/Frameworks</string>
-				</array>
-				<key>MODULEMAP_FILE</key>
-				<string>Target Support Files/Pods/Pods.modulemap</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>NO</string>
-				<key>OTHER_LDFLAGS</key>
-				<string></string>
-				<key>OTHER_LIBTOOLFLAGS</key>
-				<string></string>
-				<key>PODS_ROOT</key>
-				<string>$(SRCROOT)</string>
-				<key>PRODUCT_NAME</key>
-				<string>Pods</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-				<key>TARGETED_DEVICE_FAMILY</key>
-				<string>1,2</string>
-				<key>VERSIONING_SYSTEM</key>
-				<string>apple-generic</string>
-				<key>VERSION_INFO_PREFIX</key>
-				<string></string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>6960F584B63E126DA46845F8</key>
-		<dict>
-			<key>fileRef</key>
-			<string>9F6F3DF0590029FDD2BF323D</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>69E86E17605953297ED47A5F</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>F546F6357E933B517CB7881B</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>CURRENT_PROJECT_VERSION</key>
-				<string>1</string>
-				<key>DEFINES_MODULE</key>
-				<string>YES</string>
-				<key>DYLIB_COMPATIBILITY_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_CURRENT_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_INSTALL_NAME_BASE</key>
-				<string>@rpath</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>Target Support Files/Pods-AeroGearHttp/Pods-AeroGearHttp-prefix.pch</string>
-				<key>INFOPLIST_FILE</key>
-				<string>Target Support Files/Pods-AeroGearHttp/Info.plist</string>
-				<key>INSTALL_PATH</key>
-				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>8.0</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<array>
-					<string>$(inherited)</string>
-					<string>@executable_path/Frameworks</string>
-					<string>@loader_path/Frameworks</string>
-				</array>
-				<key>MODULEMAP_FILE</key>
-				<string>Target Support Files/Pods-AeroGearHttp/Pods-AeroGearHttp.modulemap</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>NO</string>
-				<key>PRODUCT_NAME</key>
-				<string>AeroGearHttp</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-				<key>TARGETED_DEVICE_FAMILY</key>
-				<string>1,2</string>
-				<key>VERSIONING_SYSTEM</key>
-				<string>apple-generic</string>
-				<key>VERSION_INFO_PREFIX</key>
-				<string></string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>6A6F79FB17A07ED69B003BBA</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>8E2D35A1FD235CC0EE70CCCF</string>
-				<string>2E63E0F3EF04FE43FEFC0BD4</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Pods</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6FA021021D5823E5A62B596F</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.framework</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>AeroGearHttp.framework</string>
-			<key>path</key>
-			<string>AeroGearHttp.framework</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>70A3ABA3DE559640736F5F25</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>Pods-AeroGearOAuth2-umbrella.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>73934B6A71AEA38A2A0F163B</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>91EBF1D1861CA541CECFF1A8</string>
-			<key>buildPhases</key>
-			<array>
-				<string>12673FE73F61F38A633B06BD</string>
-				<string>EF1BF76B6166FE2C4669ED72</string>
-				<string>122A13D11E404515F33F8369</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array>
-				<string>5A9B5D5E424AA14CB5747C1A</string>
-			</array>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>Pods-AeroGearOAuth2</string>
-			<key>productName</key>
-			<string>Pods-AeroGearOAuth2</string>
-			<key>productReference</key>
-			<string>315EE5973AA26BE92CF40DBC</string>
-			<key>productType</key>
-			<string>com.apple.product-type.framework</string>
-		</dict>
-		<key>73BDD6BFD81DCB33DD7111F2</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>name</key>
-			<string>HttpRequestSerializer.swift</string>
-			<key>path</key>
-			<string>AeroGearHttp/HttpRequestSerializer.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>7A2400B67A0454B004AE292B</key>
-		<dict>
-			<key>fileRef</key>
-			<string>AD1F4710F091FDC69C50F2C3</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>7AC805F56B319D32005DF499</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>3BFADAD68FB7441A273B4216</string>
-			</array>
-			<key>isa</key>
-			<string>PBXHeadersBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>7BDFBC011EBF15A349003E75</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>name</key>
-			<string>Http.swift</string>
-			<key>path</key>
-			<string>AeroGearHttp/Http.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>7CC0B73B814FC0A97C86F0F1</key>
-		<dict>
-			<key>fileRef</key>
-			<string>DA6505AA87E2E8E5971ADE4D</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>7E2E6D95A9B3BA91B12CE7B1</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>name</key>
-			<string>JsonResponseSerializer.swift</string>
-			<key>path</key>
-			<string>AeroGearHttp/JsonResponseSerializer.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>806A9FCEDFC836972D05F480</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>name</key>
-			<string>AuthzModule.swift</string>
-			<key>path</key>
-			<string>AeroGearHttp/AuthzModule.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>82EF9B6CAF5433ED8897A8C3</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>name</key>
-			<string>AccountManager.swift</string>
-			<key>path</key>
-			<string>AeroGearOAuth2/AccountManager.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>87068651B522097DB631289D</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>Pods-AeroGearHttp.modulemap</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>880320D42E86C99DCEE5F355</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>Pods-AeroGearHttp.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>8C3C71D3446BE58BF9946EC7</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>Pods.modulemap</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>8E2D35A1FD235CC0EE70CCCF</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>806A9FCEDFC836972D05F480</string>
-				<string>7BDFBC011EBF15A349003E75</string>
-				<string>73BDD6BFD81DCB33DD7111F2</string>
-				<string>EDF52C1FB12E7C24E9D52D16</string>
-				<string>7E2E6D95A9B3BA91B12CE7B1</string>
-				<string>EA6DC58D53F4C44D4333833E</string>
-				<string>AD1F4710F091FDC69C50F2C3</string>
-				<string>141320648E72660D28945973</string>
-				<string>FCA7C1371EBB23B9D31F8959</string>
-				<string>932950851BD56A268F040F4D</string>
-				<string>C840A27E49B54800F4326DC6</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>AeroGearHttp</string>
-			<key>path</key>
-			<string>AeroGearHttp</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>8F5DA60A9FFED9F213E0D5CC</key>
-		<dict>
-			<key>fileRef</key>
-			<string>73BDD6BFD81DCB33DD7111F2</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>906F51861821E91C1DBD5B94</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>name</key>
-			<string>KeycloakOAuth2Module.swift</string>
-			<key>path</key>
-			<string>AeroGearOAuth2/KeycloakOAuth2Module.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>91EBF1D1861CA541CECFF1A8</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>0C1BB0B1E56CD95C549FBC88</string>
-				<string>40DEC1C8BBFC5CDC7C78CF04</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>932950851BD56A268F040F4D</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>name</key>
-			<string>Utils.swift</string>
-			<key>path</key>
-			<string>AeroGearHttp/Utils.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>95186D2A1F60C0968E524CF6</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>F7445C1A5297D6FAF2E95610</string>
-			<key>buildPhases</key>
-			<array>
-				<string>038555EE0339C169BF6E5554</string>
-				<string>387411B63A050E7880F76F76</string>
-				<string>03F9B62B6120FF226CFD9EED</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>Pods-AeroGearHttp</string>
-			<key>productName</key>
-			<string>Pods-AeroGearHttp</string>
-			<key>productReference</key>
-			<string>6FA021021D5823E5A62B596F</string>
-			<key>productType</key>
-			<string>com.apple.product-type.framework</string>
-		</dict>
-		<key>98632E3A92C438E741AF1A07</key>
-		<dict>
-			<key>fileRef</key>
-			<string>45FD0659FDD9789FC7210798</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>9F6F3DF0590029FDD2BF323D</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>name</key>
-			<string>FacebookOAuth2Module.swift</string>
-			<key>path</key>
-			<string>AeroGearOAuth2/FacebookOAuth2Module.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>A044068D518C9CB8C52A20B5</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>Pods-AeroGearOAuth2.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>AA80541C3F17088E255F1E6B</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>627ABC132AD8AC6459765813</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>AB764D9E5399D4A78C5B9ADF</key>
-		<dict>
-			<key>fileRef</key>
-			<string>FCA7C1371EBB23B9D31F8959</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>AD1F4710F091FDC69C50F2C3</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>name</key>
-			<string>RequestSerializer.swift</string>
-			<key>path</key>
-			<string>AeroGearHttp/RequestSerializer.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B021BDA145716DB0BB88A74B</key>
-		<dict>
-			<key>fileRef</key>
-			<string>CB633FD88BDA11189E54DA21</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>B22CBF88B8F7811D594F1946</key>
-		<dict>
-			<key>fileRef</key>
-			<string>7E2E6D95A9B3BA91B12CE7B1</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>B5D3E603C0E3505AA5ED62A2</key>
-		<dict>
-			<key>containerPortal</key>
-			<string>E4319E431CE3D95321B4F8FD</string>
-			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
-			<string>1</string>
-			<key>remoteGlobalIDString</key>
-			<string>73934B6A71AEA38A2A0F163B</string>
-			<key>remoteInfo</key>
-			<string>Pods-AeroGearOAuth2</string>
-		</dict>
-		<key>B620FC58819496E074536BDB</key>
-		<dict>
-			<key>fileRef</key>
-			<string>45FD0659FDD9789FC7210798</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>B875940DE0674A609F0A63FD</key>
-		<dict>
-			<key>fileRef</key>
-			<string>4D4DE4DFADEBCBBA7621CB67</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>B8B4B05CF11A908B54906932</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES</string>
-				<key>CLANG_WARN_UNREACHABLE_CODE</key>
-				<string>YES</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>YES</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_DYNAMIC_NO_PIC</key>
-				<string>NO</string>
-				<key>GCC_OPTIMIZATION_LEVEL</key>
-				<string>0</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>DEBUG=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
-				<string>NO</string>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>8.0</string>
-				<key>ONLY_ACTIVE_ARCH</key>
-				<string>YES</string>
-				<key>STRIP_INSTALLED_PRODUCT</key>
-				<string>NO</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>B9FEE4DCB73A5AEFC1D48CBD</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>name</key>
-			<string>Config.swift</string>
-			<key>path</key>
-			<string>AeroGearOAuth2/Config.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>BAA51024B27B22DA67F44AAE</key>
-		<dict>
-			<key>fileRef</key>
-			<string>26D2D19B8084AE3830DECF84</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>BF3371A2C62843E38A27CD74</key>
-		<dict>
-			<key>fileRef</key>
-			<string>70A3ABA3DE559640736F5F25</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>BF4A40D84921349C90FAD095</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>E270AB393369F7B7A5F4C0AB</string>
-				<string>16457123C81677F59310E30C</string>
-				<string>A044068D518C9CB8C52A20B5</string>
-				<string>48B06461344AF038D5579D82</string>
-				<string>ED4211237B55D3AEC511C2DD</string>
-				<string>D4CBCF3DD49BE31444D6CCC7</string>
-				<string>70A3ABA3DE559640736F5F25</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Support Files</string>
-			<key>path</key>
-			<string>../Target Support Files/Pods-AeroGearOAuth2</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C0C64AEE4CC4C6AB996C2CDC</key>
-		<dict>
-			<key>fileRef</key>
-			<string>7BDFBC011EBF15A349003E75</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>C529FF5D4C52750416AE8F5C</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.framework</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>Pods.framework</string>
-			<key>path</key>
-			<string>Pods.framework</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>C80D3C569DDF2F749BB80DC9</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>F0578E5DF81236FFF7FD34F1</string>
-			<key>buildPhases</key>
-			<array>
-				<string>AA80541C3F17088E255F1E6B</string>
-				<string>43F1F41CDCB8AA07C55F8D8E</string>
-				<string>7AC805F56B319D32005DF499</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array>
-				<string>23C5DE1E050EC0A6D0234BAF</string>
-				<string>DFCE6B7C7F66F1EF705629D0</string>
-			</array>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>Pods</string>
-			<key>productName</key>
-			<string>Pods</string>
-			<key>productReference</key>
-			<string>C529FF5D4C52750416AE8F5C</string>
-			<key>productType</key>
-			<string>com.apple.product-type.framework</string>
-		</dict>
-		<key>C840A27E49B54800F4326DC6</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>00FA9CCC338BD32358F281EE</string>
-				<string>87068651B522097DB631289D</string>
-				<string>880320D42E86C99DCEE5F355</string>
-				<string>F546F6357E933B517CB7881B</string>
-				<string>DA6505AA87E2E8E5971ADE4D</string>
-				<string>D83649786BA6C7A50359E808</string>
-				<string>088A87C329745B74AE5538B7</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Support Files</string>
-			<key>path</key>
-			<string>../Target Support Files/Pods-AeroGearHttp</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C9756BEF40B9C40270BCF2FA</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>40613980D8512147C3DD2442</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Targets Support Files</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CB633FD88BDA11189E54DA21</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.framework</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>AeroGearHttp.framework</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>CD447EF8CC1B094394B0A25A</key>
-		<dict>
-			<key>fileRef</key>
-			<string>932950851BD56A268F040F4D</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>D19DE8987C8C639118D21923</key>
-		<dict>
-			<key>fileRef</key>
-			<string>45FD0659FDD9789FC7210798</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>D4CBCF3DD49BE31444D6CCC7</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>Pods-AeroGearOAuth2-prefix.pch</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D56BF2D50CF6F025252B7B06</key>
-		<dict>
-			<key>fileRef</key>
-			<string>F17D92D7A22E0FBF67B45A73</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>D83649786BA6C7A50359E808</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>Pods-AeroGearHttp-prefix.pch</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>DA34DE6A438F3F1E52D82D00</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>Pods-environment.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>DA6505AA87E2E8E5971ADE4D</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>Pods-AeroGearHttp-dummy.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>DFCE6B7C7F66F1EF705629D0</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXTargetDependency</string>
-			<key>name</key>
-			<string>Pods-AeroGearOAuth2</string>
-			<key>target</key>
-			<string>73934B6A71AEA38A2A0F163B</string>
-			<key>targetProxy</key>
-			<string>B5D3E603C0E3505AA5ED62A2</string>
-		</dict>
-		<key>E0DA36A91F31223D176C968B</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>Pods.release.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E270AB393369F7B7A5F4C0AB</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E410D63E0A2F8E7A33510358</key>
-		<dict>
-			<key>fileRef</key>
-			<string>04D21B6BDBA4D7F113552D9C</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E4319E431CE3D95321B4F8FD</key>
-		<dict>
-			<key>attributes</key>
-			<dict>
-				<key>LastUpgradeCheck</key>
-				<string>0510</string>
-			</dict>
-			<key>buildConfigurationList</key>
-			<string>51BC79680DA2D6185DB34627</string>
-			<key>compatibilityVersion</key>
-			<string>Xcode 3.2</string>
-			<key>developmentRegion</key>
-			<string>English</string>
-			<key>hasScannedForEncodings</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXProject</string>
-			<key>knownRegions</key>
-			<array>
-				<string>en</string>
-			</array>
-			<key>mainGroup</key>
-			<string>126E29C03CF51AFB4691BC4A</string>
-			<key>productRefGroup</key>
-			<string>F529CC4F992C10F60CDD46C8</string>
-			<key>projectDirPath</key>
-			<string></string>
-			<key>projectReferences</key>
-			<array/>
-			<key>projectRoot</key>
-			<string></string>
-			<key>targets</key>
-			<array>
-				<string>C80D3C569DDF2F749BB80DC9</string>
-				<string>95186D2A1F60C0968E524CF6</string>
-				<string>73934B6A71AEA38A2A0F163B</string>
-			</array>
-		</dict>
-		<key>EA6DC58D53F4C44D4333833E</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>name</key>
-			<string>MultiPartData.swift</string>
-			<key>path</key>
-			<string>AeroGearHttp/MultiPartData.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EAF9AAFBADFFD9E75880BB9E</key>
-		<dict>
-			<key>fileRef</key>
-			<string>278AEE0F658D7CF6FEBE09A0</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>ED4211237B55D3AEC511C2DD</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>Pods-AeroGearOAuth2-dummy.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EDF52C1FB12E7C24E9D52D16</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>name</key>
-			<string>JsonRequestSerializer.swift</string>
-			<key>path</key>
-			<string>AeroGearHttp/JsonRequestSerializer.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EED5D278DD3AC1BB435395F0</key>
-		<dict>
-			<key>fileRef</key>
-			<string>906F51861821E91C1DBD5B94</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>EF1BF76B6166FE2C4669ED72</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>B021BDA145716DB0BB88A74B</string>
-				<string>B620FC58819496E074536BDB</string>
-				<string>E410D63E0A2F8E7A33510358</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>F0578E5DF81236FFF7FD34F1</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>3D238150C25BA6E6B7EC3A90</string>
-				<string>6622ABBEFC8BEBB8ECF2C7C2</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>F17D92D7A22E0FBF67B45A73</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>name</key>
-			<string>OAuth2Module.swift</string>
-			<key>path</key>
-			<string>AeroGearOAuth2/OAuth2Module.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>F1D6132A03FF011E42A3B3DC</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>F24B67C541695EB88ACAC50F</key>
-		<dict>
-			<key>fileRef</key>
-			<string>088A87C329745B74AE5538B7</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>F529CC4F992C10F60CDD46C8</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>6FA021021D5823E5A62B596F</string>
-				<string>315EE5973AA26BE92CF40DBC</string>
-				<string>C529FF5D4C52750416AE8F5C</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Products</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>F546F6357E933B517CB7881B</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>Pods-AeroGearHttp-Private.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>F72044D02012B2CC7BD866B5</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.script.sh</string>
-			<key>path</key>
-			<string>Pods-resources.sh</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>F7445C1A5297D6FAF2E95610</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>40C8A49C49C8CE6FB732256B</string>
-				<string>69E86E17605953297ED47A5F</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>FCA7C1371EBB23B9D31F8959</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>name</key>
-			<string>StringResponseSerializer.swift</string>
-			<key>path</key>
-			<string>AeroGearHttp/StringResponseSerializer.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>FDFBC63BA0C3A52C3E217E50</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>Pods-umbrella.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>FF30FC9EA1DBBB295F1163C8</key>
-		<dict>
-			<key>containerPortal</key>
-			<string>E4319E431CE3D95321B4F8FD</string>
-			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
-			<string>1</string>
-			<key>remoteGlobalIDString</key>
-			<string>95186D2A1F60C0968E524CF6</string>
-			<key>remoteInfo</key>
-			<string>Pods-AeroGearHttp</string>
-		</dict>
-		<key>FF4A69D0F9FB7F5EB35C02A9</key>
-		<dict>
-			<key>fileRef</key>
-			<string>EDF52C1FB12E7C24E9D52D16</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-	</dict>
-	<key>rootObject</key>
-	<string>E4319E431CE3D95321B4F8FD</string>
-</dict>
-</plist>
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0AF53D77ABFD7B44707BC5E8 /* ResponseSerializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10D9E7741E4A3D560BB2D4E /* ResponseSerializer.swift */; };
+		14A7CFCCB88EFDB544583B3A /* UntrustedMemoryOAuth2Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A4894778B77DF93998DC9C4 /* UntrustedMemoryOAuth2Session.swift */; };
+		180E7053D8770EFD46171E25 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D9A2975CE32863546587736 /* Config.swift */; };
+		19C5AF57FFC7AA3DE92AFE05 /* TrustedPersistantOAuth2Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0036FE2339B5C2FF1264D9 /* TrustedPersistantOAuth2Session.swift */; };
+		22E88C426A8371936CE5F511 /* AeroGearHttp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEB05F967FA6ECBBDFED7858 /* AeroGearHttp.framework */; };
+		360DD3F7AF43D0304EE9F774 /* Pods-AeroGearHttp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3360F9F1A3BFA561AEFD69A2 /* Pods-AeroGearHttp-dummy.m */; };
+		37CEC2996F96CC45C58A214C /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42FF3FA8954BA504004BFCDD /* Utils.swift */; };
+		37FD482BBC3FA53DBF2686AC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFA61610B2B9B7F9F8883F60 /* Foundation.framework */; };
+		3877A3818141010C5CFC1B39 /* Pods-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E0BE9BF90C718D61BF03EBD /* Pods-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		39E6E7D12C4FD2F9EA7246E5 /* Pods-AeroGearOAuth2-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A56322E3DAB3444DABE0C36E /* Pods-AeroGearOAuth2-dummy.m */; };
+		3AC72A9516462531201EDB61 /* AuthzModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 926AAC5746B4E8C0F9D3B364 /* AuthzModule.swift */; };
+		464AF61E3D224274926F74F2 /* FacebookOAuth2Module.swift in Sources */ = {isa = PBXBuildFile; fileRef = B228B24498A013DCF23BAE95 /* FacebookOAuth2Module.swift */; };
+		4A5D0B54E21F0AE3134E6E6E /* HttpRequestSerializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F199298EC4FF7A491FA59192 /* HttpRequestSerializer.swift */; };
+		4C10E33B1C7C8C816918B509 /* AccountManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EE5488CF4E8A628B4E7D6D3 /* AccountManager.swift */; };
+		5CFBC242396AAE3B995F8DC9 /* OAuth2Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA55C93D206BD124A302DCEA /* OAuth2Session.swift */; };
+		5CFC052AA10AC6D5A788715C /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07DA04F9D282DF1350C1D6D1 /* Security.framework */; };
+		623773680A43713BE294E454 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFA61610B2B9B7F9F8883F60 /* Foundation.framework */; };
+		656C03F27FBECE54703926D8 /* OpenIDClaim.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5379C29725149B12B4F062AE /* OpenIDClaim.swift */; };
+		65DE719BCAB0214BCA97FF3C /* RequestSerializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD3E399BA330DE2650DAF548 /* RequestSerializer.swift */; };
+		6C8E3FB137BFBA4ED07C4990 /* StringResponseSerializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1228F54687DCAA9399761B4C /* StringResponseSerializer.swift */; };
+		7AB2340968A02F5245819734 /* Pods-AeroGearOAuth2-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 51554314CD4D70B685F33B70 /* Pods-AeroGearOAuth2-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7EA6054CC1A88EFF77C6A3CB /* MultiPartData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53FA2D4D2272488D275527A /* MultiPartData.swift */; };
+		884606B850512BB1D01D9F03 /* Http.swift in Sources */ = {isa = PBXBuildFile; fileRef = B946E344D496939C24DA0DF8 /* Http.swift */; };
+		91DA990F59EDBADC4AE4B098 /* Pods-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 33DFF45B0588E7EBC202C097 /* Pods-dummy.m */; };
+		B41DF4FCD70F042794D950E8 /* OAuth2Module.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279FDA6416EB74C4DFAF693E /* OAuth2Module.swift */; };
+		C1EB677249BFB865079E76F5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFA61610B2B9B7F9F8883F60 /* Foundation.framework */; };
+		C65AE646C2FE616C633D3C4A /* KeycloakOAuth2Module.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E53AB4B1DE256AF69BDC434 /* KeycloakOAuth2Module.swift */; };
+		E06C8D296EB908381F4E15C4 /* DateUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 469C6953F318C9915F54F5FC /* DateUtils.swift */; };
+		E1D59A906397AD66B1C9A21F /* JsonResponseSerializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B21066F183FAC7CEBF8CA684 /* JsonResponseSerializer.swift */; };
+		E523160E4D076008176EB0C4 /* JsonRequestSerializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A9DE7666B8D19DD929857F /* JsonRequestSerializer.swift */; };
+		EBB7082A0153BBBB7A478AA1 /* Pods-AeroGearHttp-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DDEC23E30772AE801B4D85F3 /* Pods-AeroGearHttp-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7449EBC028ECD26224FF0CF3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4F314F45C23AE2F74BA6712B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 292F15C7E93C0481CDB78A9F;
+			remoteInfo = "Pods-AeroGearOAuth2";
+		};
+		95937D597A26CC9DFC6D0274 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4F314F45C23AE2F74BA6712B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2358D1615B1928B75506FD1E;
+			remoteInfo = "Pods-AeroGearHttp";
+		};
+		BA0884D56FF3EDD89232F370 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4F314F45C23AE2F74BA6712B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2358D1615B1928B75506FD1E;
+			remoteInfo = "Pods-AeroGearHttp";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		03A9DE7666B8D19DD929857F /* JsonRequestSerializer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JsonRequestSerializer.swift; path = AeroGearHttp/JsonRequestSerializer.swift; sourceTree = "<group>"; };
+		07DA04F9D282DF1350C1D6D1 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
+		1228F54687DCAA9399761B4C /* StringResponseSerializer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StringResponseSerializer.swift; path = AeroGearHttp/StringResponseSerializer.swift; sourceTree = "<group>"; };
+		1828A846C8B7AED4F3A628CF /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1A4894778B77DF93998DC9C4 /* UntrustedMemoryOAuth2Session.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UntrustedMemoryOAuth2Session.swift; path = AeroGearOAuth2/UntrustedMemoryOAuth2Session.swift; sourceTree = "<group>"; };
+		279FDA6416EB74C4DFAF693E /* OAuth2Module.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OAuth2Module.swift; path = AeroGearOAuth2/OAuth2Module.swift; sourceTree = "<group>"; };
+		3360F9F1A3BFA561AEFD69A2 /* Pods-AeroGearHttp-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AeroGearHttp-dummy.m"; sourceTree = "<group>"; };
+		33DFF45B0588E7EBC202C097 /* Pods-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-dummy.m"; sourceTree = "<group>"; };
+		41D04786F935648425FB787E /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		42FF3FA8954BA504004BFCDD /* Utils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Utils.swift; path = AeroGearHttp/Utils.swift; sourceTree = "<group>"; };
+		45D8CD82609370BCE6A1FAA7 /* Pods-AeroGearOAuth2-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AeroGearOAuth2-Private.xcconfig"; sourceTree = "<group>"; };
+		469C6953F318C9915F54F5FC /* DateUtils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DateUtils.swift; path = AeroGearOAuth2/DateUtils.swift; sourceTree = "<group>"; };
+		4D725679B838E85AB6A96951 /* Pods-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-acknowledgements.plist"; sourceTree = "<group>"; };
+		4D9A2975CE32863546587736 /* Config.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Config.swift; path = AeroGearOAuth2/Config.swift; sourceTree = "<group>"; };
+		51554314CD4D70B685F33B70 /* Pods-AeroGearOAuth2-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AeroGearOAuth2-umbrella.h"; sourceTree = "<group>"; };
+		522FDCEE2BE562A884103914 /* Pods-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-frameworks.sh"; sourceTree = "<group>"; };
+		5379C29725149B12B4F062AE /* OpenIDClaim.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OpenIDClaim.swift; path = AeroGearOAuth2/OpenIDClaim.swift; sourceTree = "<group>"; };
+		68739ABA4B0EE7FDC9327A2D /* Pods-AeroGearHttp.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-AeroGearHttp.modulemap"; sourceTree = "<group>"; };
+		6BBD4A9527FF4EA51E48CDD0 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.debug.xcconfig; sourceTree = "<group>"; };
+		6EED0581F0B2F1665A9EBB1E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		762E3C50DA0BAF8770DCA327 /* AeroGearHttp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AeroGearHttp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7740141914CBD57157E891FA /* Pods-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-environment.h"; sourceTree = "<group>"; };
+		7E0BE9BF90C718D61BF03EBD /* Pods-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-umbrella.h"; sourceTree = "<group>"; };
+		7EE5488CF4E8A628B4E7D6D3 /* AccountManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AccountManager.swift; path = AeroGearOAuth2/AccountManager.swift; sourceTree = "<group>"; };
+		821971809D35D387973D0D6F /* Pods-AeroGearHttp-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AeroGearHttp-Private.xcconfig"; sourceTree = "<group>"; };
+		8D78DEB9FBA0BCC2BD8B8127 /* AeroGearOAuth2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AeroGearOAuth2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		926AAC5746B4E8C0F9D3B364 /* AuthzModule.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AuthzModule.swift; path = AeroGearHttp/AuthzModule.swift; sourceTree = "<group>"; };
+		993B98AA833D842EE6F0D676 /* Pods.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Pods.modulemap; sourceTree = "<group>"; };
+		9E4A325BB24FA66991F40C24 /* Pods-AeroGearOAuth2.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-AeroGearOAuth2.modulemap"; sourceTree = "<group>"; };
+		9E53AB4B1DE256AF69BDC434 /* KeycloakOAuth2Module.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeycloakOAuth2Module.swift; path = AeroGearOAuth2/KeycloakOAuth2Module.swift; sourceTree = "<group>"; };
+		A10D9E7741E4A3D560BB2D4E /* ResponseSerializer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResponseSerializer.swift; path = AeroGearHttp/ResponseSerializer.swift; sourceTree = "<group>"; };
+		A56322E3DAB3444DABE0C36E /* Pods-AeroGearOAuth2-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AeroGearOAuth2-dummy.m"; sourceTree = "<group>"; };
+		A78F71219931609DE71F49DE /* Pods-AeroGearOAuth2-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AeroGearOAuth2-prefix.pch"; sourceTree = "<group>"; };
+		AE0036FE2339B5C2FF1264D9 /* TrustedPersistantOAuth2Session.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TrustedPersistantOAuth2Session.swift; path = AeroGearOAuth2/TrustedPersistantOAuth2Session.swift; sourceTree = "<group>"; };
+		B21066F183FAC7CEBF8CA684 /* JsonResponseSerializer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JsonResponseSerializer.swift; path = AeroGearHttp/JsonResponseSerializer.swift; sourceTree = "<group>"; };
+		B228B24498A013DCF23BAE95 /* FacebookOAuth2Module.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FacebookOAuth2Module.swift; path = AeroGearOAuth2/FacebookOAuth2Module.swift; sourceTree = "<group>"; };
+		B53FA2D4D2272488D275527A /* MultiPartData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultiPartData.swift; path = AeroGearHttp/MultiPartData.swift; sourceTree = "<group>"; };
+		B946E344D496939C24DA0DF8 /* Http.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Http.swift; path = AeroGearHttp/Http.swift; sourceTree = "<group>"; };
+		BEB05F967FA6ECBBDFED7858 /* AeroGearHttp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AeroGearHttp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C49BA0F8D118135A219D0F4F /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.release.xcconfig; sourceTree = "<group>"; };
+		CA55C93D206BD124A302DCEA /* OAuth2Session.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OAuth2Session.swift; path = AeroGearOAuth2/OAuth2Session.swift; sourceTree = "<group>"; };
+		CC1D54F8EECAFAEB2796CB9D /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		CC8BEAC3DC01DCF48E6A2F50 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CFA61610B2B9B7F9F8883F60 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		D3682F95B4607909C2F448A0 /* Pods-AeroGearHttp.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AeroGearHttp.xcconfig"; sourceTree = "<group>"; };
+		DDEC23E30772AE801B4D85F3 /* Pods-AeroGearHttp-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AeroGearHttp-umbrella.h"; sourceTree = "<group>"; };
+		E1A323BF63A912E9D703457C /* Pods-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-resources.sh"; sourceTree = "<group>"; };
+		E8DB82CF1F92C9F504C0A1EC /* Pods-AeroGearHttp-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AeroGearHttp-prefix.pch"; sourceTree = "<group>"; };
+		F199298EC4FF7A491FA59192 /* HttpRequestSerializer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HttpRequestSerializer.swift; path = AeroGearHttp/HttpRequestSerializer.swift; sourceTree = "<group>"; };
+		F3F5CA4255E16A6497EC3FDD /* Pods-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-acknowledgements.markdown"; sourceTree = "<group>"; };
+		F4FB42FB175BBB2E5476222B /* Pods-AeroGearOAuth2.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AeroGearOAuth2.xcconfig"; sourceTree = "<group>"; };
+		FD3E399BA330DE2650DAF548 /* RequestSerializer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RequestSerializer.swift; path = AeroGearHttp/RequestSerializer.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0704DC45E05841D5F1380F54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22E88C426A8371936CE5F511 /* AeroGearHttp.framework in Frameworks */,
+				C1EB677249BFB865079E76F5 /* Foundation.framework in Frameworks */,
+				5CFC052AA10AC6D5A788715C /* Security.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		36918DEBB7DF141B658651F9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37FD482BBC3FA53DBF2686AC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		445F6E4A4A0AF8BB2EFC4030 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				623773680A43713BE294E454 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		353F00EFCB40F851BEEC16A8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BEB05F967FA6ECBBDFED7858 /* AeroGearHttp.framework */,
+				3C9BBF96459CB9FB8DDAC05E /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3C9BBF96459CB9FB8DDAC05E /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				CFA61610B2B9B7F9F8883F60 /* Foundation.framework */,
+				07DA04F9D282DF1350C1D6D1 /* Security.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		4039F82DDFB61FB0C2603DFE /* AeroGearHttp */ = {
+			isa = PBXGroup;
+			children = (
+				926AAC5746B4E8C0F9D3B364 /* AuthzModule.swift */,
+				B946E344D496939C24DA0DF8 /* Http.swift */,
+				F199298EC4FF7A491FA59192 /* HttpRequestSerializer.swift */,
+				03A9DE7666B8D19DD929857F /* JsonRequestSerializer.swift */,
+				B21066F183FAC7CEBF8CA684 /* JsonResponseSerializer.swift */,
+				B53FA2D4D2272488D275527A /* MultiPartData.swift */,
+				FD3E399BA330DE2650DAF548 /* RequestSerializer.swift */,
+				A10D9E7741E4A3D560BB2D4E /* ResponseSerializer.swift */,
+				1228F54687DCAA9399761B4C /* StringResponseSerializer.swift */,
+				42FF3FA8954BA504004BFCDD /* Utils.swift */,
+				8B451083025DC6E33AEDB83E /* Support Files */,
+			);
+			path = AeroGearHttp;
+			sourceTree = "<group>";
+		};
+		49285C3D0384B2E473E9AF5F /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				1828A846C8B7AED4F3A628CF /* Info.plist */,
+				9E4A325BB24FA66991F40C24 /* Pods-AeroGearOAuth2.modulemap */,
+				F4FB42FB175BBB2E5476222B /* Pods-AeroGearOAuth2.xcconfig */,
+				45D8CD82609370BCE6A1FAA7 /* Pods-AeroGearOAuth2-Private.xcconfig */,
+				A56322E3DAB3444DABE0C36E /* Pods-AeroGearOAuth2-dummy.m */,
+				A78F71219931609DE71F49DE /* Pods-AeroGearOAuth2-prefix.pch */,
+				51554314CD4D70B685F33B70 /* Pods-AeroGearOAuth2-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-AeroGearOAuth2";
+			sourceTree = "<group>";
+		};
+		6D4E12B5498BF634E73B90A1 = {
+			isa = PBXGroup;
+			children = (
+				CC1D54F8EECAFAEB2796CB9D /* Podfile */,
+				353F00EFCB40F851BEEC16A8 /* Frameworks */,
+				868C02843ED84AA00AE26BF9 /* Pods */,
+				E91947DB954CB652967F8E86 /* Products */,
+				B981989AC3679691844A8F58 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		819F6CCF58B182A19041C27E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6EED0581F0B2F1665A9EBB1E /* Info.plist */,
+				993B98AA833D842EE6F0D676 /* Pods.modulemap */,
+				F3F5CA4255E16A6497EC3FDD /* Pods-acknowledgements.markdown */,
+				4D725679B838E85AB6A96951 /* Pods-acknowledgements.plist */,
+				33DFF45B0588E7EBC202C097 /* Pods-dummy.m */,
+				7740141914CBD57157E891FA /* Pods-environment.h */,
+				522FDCEE2BE562A884103914 /* Pods-frameworks.sh */,
+				E1A323BF63A912E9D703457C /* Pods-resources.sh */,
+				7E0BE9BF90C718D61BF03EBD /* Pods-umbrella.h */,
+				6BBD4A9527FF4EA51E48CDD0 /* Pods.debug.xcconfig */,
+				C49BA0F8D118135A219D0F4F /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			path = "Target Support Files/Pods";
+			sourceTree = "<group>";
+		};
+		868C02843ED84AA00AE26BF9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4039F82DDFB61FB0C2603DFE /* AeroGearHttp */,
+				EE542F8C8DC843F38B710832 /* AeroGearOAuth2 */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		8B451083025DC6E33AEDB83E /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				CC8BEAC3DC01DCF48E6A2F50 /* Info.plist */,
+				68739ABA4B0EE7FDC9327A2D /* Pods-AeroGearHttp.modulemap */,
+				D3682F95B4607909C2F448A0 /* Pods-AeroGearHttp.xcconfig */,
+				821971809D35D387973D0D6F /* Pods-AeroGearHttp-Private.xcconfig */,
+				3360F9F1A3BFA561AEFD69A2 /* Pods-AeroGearHttp-dummy.m */,
+				E8DB82CF1F92C9F504C0A1EC /* Pods-AeroGearHttp-prefix.pch */,
+				DDEC23E30772AE801B4D85F3 /* Pods-AeroGearHttp-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-AeroGearHttp";
+			sourceTree = "<group>";
+		};
+		B981989AC3679691844A8F58 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				819F6CCF58B182A19041C27E /* Pods */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		E91947DB954CB652967F8E86 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				762E3C50DA0BAF8770DCA327 /* AeroGearHttp.framework */,
+				8D78DEB9FBA0BCC2BD8B8127 /* AeroGearOAuth2.framework */,
+				41D04786F935648425FB787E /* Pods.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EE542F8C8DC843F38B710832 /* AeroGearOAuth2 */ = {
+			isa = PBXGroup;
+			children = (
+				7EE5488CF4E8A628B4E7D6D3 /* AccountManager.swift */,
+				4D9A2975CE32863546587736 /* Config.swift */,
+				469C6953F318C9915F54F5FC /* DateUtils.swift */,
+				B228B24498A013DCF23BAE95 /* FacebookOAuth2Module.swift */,
+				9E53AB4B1DE256AF69BDC434 /* KeycloakOAuth2Module.swift */,
+				279FDA6416EB74C4DFAF693E /* OAuth2Module.swift */,
+				CA55C93D206BD124A302DCEA /* OAuth2Session.swift */,
+				5379C29725149B12B4F062AE /* OpenIDClaim.swift */,
+				AE0036FE2339B5C2FF1264D9 /* TrustedPersistantOAuth2Session.swift */,
+				1A4894778B77DF93998DC9C4 /* UntrustedMemoryOAuth2Session.swift */,
+				49285C3D0384B2E473E9AF5F /* Support Files */,
+			);
+			path = AeroGearOAuth2;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		5C7AA91060E4986600C5E5E4 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3877A3818141010C5CFC1B39 /* Pods-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7EE95D05F5FC46333C137138 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7AB2340968A02F5245819734 /* Pods-AeroGearOAuth2-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE21083ED75C6DD4316872BD /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBB7082A0153BBBB7A478AA1 /* Pods-AeroGearHttp-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		2358D1615B1928B75506FD1E /* Pods-AeroGearHttp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F4349534DD860704E8BB2ED0 /* Build configuration list for PBXNativeTarget "Pods-AeroGearHttp" */;
+			buildPhases = (
+				6EEB7D0D8EFF00758A7A2F6A /* Sources */,
+				445F6E4A4A0AF8BB2EFC4030 /* Frameworks */,
+				FE21083ED75C6DD4316872BD /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-AeroGearHttp";
+			productName = "Pods-AeroGearHttp";
+			productReference = 762E3C50DA0BAF8770DCA327 /* AeroGearHttp.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		292F15C7E93C0481CDB78A9F /* Pods-AeroGearOAuth2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 92C5F812B8E2153685A1B96B /* Build configuration list for PBXNativeTarget "Pods-AeroGearOAuth2" */;
+			buildPhases = (
+				BD2C04E2493F28881C19CB04 /* Sources */,
+				0704DC45E05841D5F1380F54 /* Frameworks */,
+				7EE95D05F5FC46333C137138 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				92DCE79F03D2A07699CB51FD /* PBXTargetDependency */,
+			);
+			name = "Pods-AeroGearOAuth2";
+			productName = "Pods-AeroGearOAuth2";
+			productReference = 8D78DEB9FBA0BCC2BD8B8127 /* AeroGearOAuth2.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		9E0503DED757C56BDC920D61 /* Pods */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 20E8107FD55549A21B00D755 /* Build configuration list for PBXNativeTarget "Pods" */;
+			buildPhases = (
+				63AC156AC35C9E263EE2AEE3 /* Sources */,
+				36918DEBB7DF141B658651F9 /* Frameworks */,
+				5C7AA91060E4986600C5E5E4 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				93AD834A93FADDE3A9C04447 /* PBXTargetDependency */,
+				6FAFDF6E00B2B158E611AAA7 /* PBXTargetDependency */,
+			);
+			name = Pods;
+			productName = Pods;
+			productReference = 41D04786F935648425FB787E /* Pods.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4F314F45C23AE2F74BA6712B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+			};
+			buildConfigurationList = 0885818CF72A7F2BAEF67976 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 6D4E12B5498BF634E73B90A1;
+			productRefGroup = E91947DB954CB652967F8E86 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9E0503DED757C56BDC920D61 /* Pods */,
+				2358D1615B1928B75506FD1E /* Pods-AeroGearHttp */,
+				292F15C7E93C0481CDB78A9F /* Pods-AeroGearOAuth2 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		63AC156AC35C9E263EE2AEE3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				91DA990F59EDBADC4AE4B098 /* Pods-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6EEB7D0D8EFF00758A7A2F6A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3AC72A9516462531201EDB61 /* AuthzModule.swift in Sources */,
+				884606B850512BB1D01D9F03 /* Http.swift in Sources */,
+				4A5D0B54E21F0AE3134E6E6E /* HttpRequestSerializer.swift in Sources */,
+				E523160E4D076008176EB0C4 /* JsonRequestSerializer.swift in Sources */,
+				E1D59A906397AD66B1C9A21F /* JsonResponseSerializer.swift in Sources */,
+				7EA6054CC1A88EFF77C6A3CB /* MultiPartData.swift in Sources */,
+				360DD3F7AF43D0304EE9F774 /* Pods-AeroGearHttp-dummy.m in Sources */,
+				65DE719BCAB0214BCA97FF3C /* RequestSerializer.swift in Sources */,
+				0AF53D77ABFD7B44707BC5E8 /* ResponseSerializer.swift in Sources */,
+				6C8E3FB137BFBA4ED07C4990 /* StringResponseSerializer.swift in Sources */,
+				37CEC2996F96CC45C58A214C /* Utils.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD2C04E2493F28881C19CB04 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C10E33B1C7C8C816918B509 /* AccountManager.swift in Sources */,
+				180E7053D8770EFD46171E25 /* Config.swift in Sources */,
+				E06C8D296EB908381F4E15C4 /* DateUtils.swift in Sources */,
+				464AF61E3D224274926F74F2 /* FacebookOAuth2Module.swift in Sources */,
+				C65AE646C2FE616C633D3C4A /* KeycloakOAuth2Module.swift in Sources */,
+				B41DF4FCD70F042794D950E8 /* OAuth2Module.swift in Sources */,
+				5CFBC242396AAE3B995F8DC9 /* OAuth2Session.swift in Sources */,
+				656C03F27FBECE54703926D8 /* OpenIDClaim.swift in Sources */,
+				39E6E7D12C4FD2F9EA7246E5 /* Pods-AeroGearOAuth2-dummy.m in Sources */,
+				19C5AF57FFC7AA3DE92AFE05 /* TrustedPersistantOAuth2Session.swift in Sources */,
+				14A7CFCCB88EFDB544583B3A /* UntrustedMemoryOAuth2Session.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6FAFDF6E00B2B158E611AAA7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-AeroGearOAuth2";
+			target = 292F15C7E93C0481CDB78A9F /* Pods-AeroGearOAuth2 */;
+			targetProxy = 7449EBC028ECD26224FF0CF3 /* PBXContainerItemProxy */;
+		};
+		92DCE79F03D2A07699CB51FD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-AeroGearHttp";
+			target = 2358D1615B1928B75506FD1E /* Pods-AeroGearHttp */;
+			targetProxy = BA0884D56FF3EDD89232F370 /* PBXContainerItemProxy */;
+		};
+		93AD834A93FADDE3A9C04447 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-AeroGearHttp";
+			target = 2358D1615B1928B75506FD1E /* Pods-AeroGearHttp */;
+			targetProxy = 95937D597A26CC9DFC6D0274 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		2985643015545AC91CF9A268 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		5C44E036C2C6D1A9C50AA680 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6BBD4A9527FF4EA51E48CDD0 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods/Pods.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		5C9FAAB17AEAAC710D43BB55 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 821971809D35D387973D0D6F /* Pods-AeroGearHttp-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-AeroGearHttp/Pods-AeroGearHttp-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-AeroGearHttp/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-AeroGearHttp/Pods-AeroGearHttp.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = AeroGearHttp;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		7023E9D36583F87F2DE8FC4F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 45D8CD82609370BCE6A1FAA7 /* Pods-AeroGearOAuth2-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-AeroGearOAuth2/Pods-AeroGearOAuth2-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-AeroGearOAuth2/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-AeroGearOAuth2/Pods-AeroGearOAuth2.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = AeroGearOAuth2;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		89BBE10E1DB35C31C88348E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C49BA0F8D118135A219D0F4F /* Pods.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods/Pods.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		927E93576C65DB3B39223862 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		ACD76DE4A311B7AD76BAAE77 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 45D8CD82609370BCE6A1FAA7 /* Pods-AeroGearOAuth2-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-AeroGearOAuth2/Pods-AeroGearOAuth2-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-AeroGearOAuth2/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-AeroGearOAuth2/Pods-AeroGearOAuth2.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = AeroGearOAuth2;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		DC1434608DDA9DCB125E664A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 821971809D35D387973D0D6F /* Pods-AeroGearHttp-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-AeroGearHttp/Pods-AeroGearHttp-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-AeroGearHttp/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-AeroGearHttp/Pods-AeroGearHttp.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = AeroGearHttp;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0885818CF72A7F2BAEF67976 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2985643015545AC91CF9A268 /* Debug */,
+				927E93576C65DB3B39223862 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		20E8107FD55549A21B00D755 /* Build configuration list for PBXNativeTarget "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5C44E036C2C6D1A9C50AA680 /* Debug */,
+				89BBE10E1DB35C31C88348E0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		92C5F812B8E2153685A1B96B /* Build configuration list for PBXNativeTarget "Pods-AeroGearOAuth2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ACD76DE4A311B7AD76BAAE77 /* Debug */,
+				7023E9D36583F87F2DE8FC4F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F4349534DD860704E8BB2ED0 /* Build configuration list for PBXNativeTarget "Pods-AeroGearHttp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5C9FAAB17AEAAC710D43BB55 /* Debug */,
+				DC1434608DDA9DCB125E664A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4F314F45C23AE2F74BA6712B /* Project object */;
+}
