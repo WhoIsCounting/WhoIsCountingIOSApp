@@ -42,48 +42,24 @@ class TblVwCell: UITableViewCell {
         
         
         var selectedIndexPath: NSIndexPath = indice
+        var question = dataM.questions[indice.row]
         
         
-        var userDefaults:NSUserDefaults = NSUserDefaults()
-        var itemListArray:NSMutableArray = userDefaults.objectForKey("itemList") as! NSMutableArray
-        var mutableItemList:NSMutableArray = NSMutableArray()
+        var count: Int
+        count = question.ido + 1
         
-        for dict:AnyObject in itemListArray {
-            mutableItemList.addObject(dict as! NSDictionary)
-            
-        }
-        
-        var count: Int?
-        if (toDoData.objectForKey("itemCount") != nil) {
-            count = toDoData.objectForKey("itemCount") as? Int
-            count = count! + 1
-        } else { count = 1}
-        
-        var dataSet:NSMutableDictionary = NSMutableDictionary()
-        dataSet.setObject(toDoData.objectForKey("itemTitle")!, forKey: "itemTitle")
-        dataSet.setObject(toDoData.objectForKey("itemNote")!, forKey: "itemNote")
-        dataSet.setObject(count!, forKey: "itemCount")
-        
-        mutableItemList.insertObject(dataSet, atIndex: indice.row)
-        mutableItemList.removeObject(toDoData)
-        
-        userDefaults.removeObjectForKey("itemList")
-        userDefaults.setObject(mutableItemList, forKey: "itemList")
-        userDefaults.synchronize()
+        question.ido = count
         
         
-        userDefaults = NSUserDefaults.standardUserDefaults()
+        
         
         if (tvc == "master") {
-            var fromUserDefaults:NSMutableArray? = userDefaults.objectForKey("itemList") as? NSMutableArray
-            if (fromUserDefaults != nil) {
-                master.toDoItems = fromUserDefaults!
-                master.tableView!.reloadData()
-            }
+            master.tableView!.reloadData()
         }
         
         //Debug
-        println("tapped index \(indice.row) and # \(count!)")
+        println("tapped index \(indice.row) and # \(count)")
+        println(" \(dataM.questions[indice.row].ido)")
     }
 
 }

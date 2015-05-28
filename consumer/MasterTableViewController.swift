@@ -81,6 +81,33 @@ class MasterTableViewController: UITableViewController {
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         //Acá debe colocarse el número de preguntas que se quiera mostrar y haya obtenido de la DB.
+        return dataM.questions.count
+    }
+    
+    
+    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        
+        let cell:TblVwCell = self.tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) as! TblVwCell
+        cell.tvc = "master"
+        //var toDoItem:NSDictionary = toDoItems.objectAtIndex(indexPath.row) as! NSDictionary
+        var question = dataM.questions[indexPath.row]
+        
+        
+        cell.labelOLName.text = "# \(question.ido) k"//Cambia segun el objeto
+        cell.tvOLName.text = question.question
+        cell.tvOLName.userInteractionEnabled = false;
+        
+        cell.buttonOLName.setTitle("I Did", forState: UIControlState.Normal) //Nombre del boton
+        
+        //Para actualizar la tabla desde la celda
+        cell.indice = indexPath
+        cell.toDoData = question.diccionario
+        
+        return cell
+    }
+    
+    /*override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        //Acá debe colocarse el número de preguntas que se quiera mostrar y haya obtenido de la DB.
         return toDoItems.count
     }
     
@@ -108,7 +135,7 @@ class MasterTableViewController: UITableViewController {
         cell.toDoData = toDoItems.objectAtIndex(indexPath.row) as! NSMutableDictionary
         
         return cell
-    }
+    }*/
     
     override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat { //Método para darle altura a cada fila
         return 100
@@ -159,7 +186,8 @@ class MasterTableViewController: UITableViewController {
         if (segue != nil && segue!.identifier == "showDetail") {
             var selectedIndexPath: NSIndexPath = self.tableView.indexPathForSelectedRow()!
             var detailViewController: DetailViewController = segue!.destinationViewController as! DetailViewController
-            detailViewController.toDoData = toDoItems.objectAtIndex(selectedIndexPath.row) as! NSMutableDictionary
+            detailViewController.row = selectedIndexPath.row
+            
         }
     }
 }

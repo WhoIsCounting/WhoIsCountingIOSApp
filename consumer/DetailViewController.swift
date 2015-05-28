@@ -13,7 +13,7 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var titleTextField: UITextField! = UITextField()
     @IBOutlet weak var notesTextView: UITextView! = UITextView()
     
-    var toDoData:NSMutableDictionary = NSMutableDictionary()
+    var row = Int()
     
     
     required init(coder aDecoder: NSCoder) {
@@ -22,12 +22,13 @@ class DetailViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        var question = dataM.questions[row]
         
         titleTextField.userInteractionEnabled=false
         notesTextView.userInteractionEnabled=false
         
-        titleTextField.text = toDoData.objectForKey("itemTitle") as! String
-        notesTextView.text = toDoData.objectForKey("itemNote") as! String
+        titleTextField.text = question.question
+        notesTextView.text = "hola"//question.category
         // Do any additional setup after loading the view.
     }
 
@@ -42,7 +43,7 @@ class DetailViewController: UIViewController {
             
         }
         
-        mutableItemList.removeObject(toDoData)
+        //mutableItemList.removeObject(toDoData)
         userDefaults.removeObjectForKey("itemList")
         userDefaults.setObject(mutableItemList, forKey: "itemList")
         userDefaults.synchronize()

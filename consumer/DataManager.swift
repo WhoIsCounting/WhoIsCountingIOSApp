@@ -186,7 +186,7 @@ class DataManager {
     func getAPIProfile(completion: ((responseData: AnyObject!) -> Void)) {
         println("Perform getAPIProfile")
         self.getAPIAuth()
-        self.getAPIData("https://whos-counting-1.appspot.com/_ah/api/whosCounting/v1/profile",
+        self.getAPIData("https://whos-counting-1.appspot.com/_ah/api/whoscounting/v1/profile",
             success:{ (data) in
             completion(responseData: data)
         })

@@ -218,7 +218,7 @@ class TVCUserQuestions: UITableViewController {
         if (segue != nil && segue!.identifier == "showDetail") {
             var selectedIndexPath: NSIndexPath = self.tableView.indexPathForSelectedRow()!
             var detailViewController: DetailViewController = segue!.destinationViewController as! DetailViewController
-            detailViewController.toDoData = toDoItems.objectAtIndex(selectedIndexPath.row) as! NSMutableDictionary
+            detailViewController.row = selectedIndexPath.row
         }
     }
     
