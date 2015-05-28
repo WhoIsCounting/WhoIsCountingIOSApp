@@ -13,10 +13,7 @@ class MasterTableViewController: UITableViewController {
     
     var toDoItems:NSMutableArray = NSMutableArray()
     
-    //var dm : DataManager = DataManager()
-    
-   
-    
+        
     required init(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         
@@ -57,6 +54,11 @@ class MasterTableViewController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        
+        //Nuevo codigo reloading...
+       dataM.getQuestions()
+        
+        
     }
 
     override func didReceiveMemoryWarning() {

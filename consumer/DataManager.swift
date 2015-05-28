@@ -10,6 +10,7 @@
 import Foundation
 import AeroGearHttp
 import AeroGearOAuth2
+import SwiftyJSON
 
 
 let TopAppURL = "https://itunes.apple.com/us/rss/topgrossingipadapplications/limit=25/json"
@@ -18,6 +19,8 @@ let TransURL = "https://maps.googleapis.com/maps/api/timezone/json?location=14.6
 class DataManager {
     
     var http: Http!
+    var questions = [Question]()
+    
     
     init(){
     
@@ -140,21 +143,12 @@ class DataManager {
     }
     
     
+    
 
     func consumeAPI(url : String, dict : [String: AnyObject]?, success: ((responseData: AnyObject!) -> Void)){
-        println("Perform Create Question")
+        println("DataM Enter ConsumeAPI Func")
         
         getAPIAuth()
-        /*
-        //Autenticacion
-        http = Http()
-        let googleConfig = GoogleConfig(
-            clientId: "115814606132-24i7f5psvb3547h3g4o67vri014p6nd0.apps.googleusercontent.com",
-            scopes:["https://www.googleapis.com/auth/userinfo.email"])
-        let gdModule = AccountManager.addGoogleAccount(googleConfig)
-        self.http.authzModule = gdModule
-        //Fin Autenticacion
-        */
         
         self.postAPIData(url, parameters: dict, success:{ (data) in
             success(responseData: data!)
@@ -192,27 +186,51 @@ class DataManager {
     func getAPIProfile(completion: ((responseData: AnyObject!) -> Void)) {
         println("Perform getAPIProfile")
         self.getAPIAuth()
-        self.getAPIData("https://whos-counting-1.appspot.com/_ah/api/whosCounting/v1/profile", success:{ (data) in
+        self.getAPIData("https://whos-counting-1.appspot.com/_ah/api/whosCounting/v1/profile",
+            success:{ (data) in
             completion(responseData: data)
         })
     }
     
+    func getAPIQueryQuestions(completion: ((responseData: AnyObject!) -> Void)) {
+        println("ENTRADA: getAPIQueryQuestions")
+        self.getAPIAuth()
+        self.getAPIData("https://whos-counting-1.appspot.com/_ah/api/whosCounting/v1/queryQuestions",
+            success:{ (data) in
+                completion(responseData: data)
+        })
+        /*self.postAPIData("https://whos-counting-1.appspot.com/_ah/api/whosCounting/v1/queryQuestions", parameters: dict, success:{ (data) in
+            success(responseData: data!)
+        })*/
+    }
+    
     func getAPIData(url: String,success: ((responseData: AnyObject!) -> Void)){
         self.http.GET(url, completionHandler: {(response, error) in
-            println("GET Method done!")
+            println("GET Method getAPIData Done LX")
             if (error != nil) {
                 self.presentAlert("Error", message: error!.localizedDescription)
                 println("Error" + error!.localizedDescription)
                 success(responseData: nil)
             } else {
                 self.presentAlert("Success", message: "Successfully uploaded!")
-                println("Success \n\(response!)")
-                //let data = (response!.toString() as NSString).dataUsingEncoding(NSUTF8StringEncoding)
+                //println("Success \n\(response!)")
                 
                 success(responseData: response!)
             }
         })
     }
+    
+    func prueba01API(url : String, dict : [String: AnyObject]?, success: ((responseData: AnyObject!) -> Void)){
+        println("DataM Enter  Func")
+        
+        getAPIAuth()
+        
+        self.postAPIData(url, parameters: dict, success:{ (data) in
+            success(responseData: data!)
+        })
+    }
+    
+    
     
     func getAPIAuth() {
         http = Http()
@@ -226,5 +244,21 @@ class DataManager {
         password: "Lum20ggl",
         persistence: .None)
         */
+    }
+    
+    func getQuestions() {
+        consumeAPI("https://whos-counting-1.appspot.com/_ah/api/whoscounting/v1/queryQuestions", dict: Dictionary())  { (googleData) -> Void in
+            let json = JSON(googleData)
+
+            
+            if let items = json["items"].array{
+              
+                
+                for item in items{
+                    self.questions.append(Question(nsmdict: item.object as! NSMutableDictionary))
+                }
+            }
+        }
+        
     }
 }

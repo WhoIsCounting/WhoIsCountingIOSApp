@@ -20,7 +20,6 @@ class TVCUserQuestions: UITableViewController {
         userQ = self
         
         dataM.consumeAPI("https://whos-counting-1.appspot.com/_ah/api/whosCounting/v1/getQuestionsCreated", dict: Dictionary()) { (googleData) -> Void in
-            //println("hola \(googleData)")
             self.json = JSON(googleData)
             
             println(self.json.description)
@@ -37,6 +36,7 @@ class TVCUserQuestions: UITableViewController {
             if let gender = self.json["gender"].string {
                 //self.genderTxtF.text = gender
             }
+            
             println(self.json["items"][0]["question"].string!)
             
             if let camino = self.json["items"][0]["ido"].int  {
@@ -44,7 +44,9 @@ class TVCUserQuestions: UITableViewController {
             }
             
             
-            println(self.json["items"][1]["question"].string!)
+            println(self.json["items"][1]["question"].string!+" espacio")
+            println(self.json["items"].count)
+            
             //println(self.toDoItems.objectAtIndex(0)["itemCount"])
             //let s: String = self.toDoItems[0]["itemTitle"] as String
             //println(s)
