@@ -22,7 +22,7 @@ class DetailViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        var question = dataM.questions[row]
+        var question = dataM.NFquestions[row]
         
         titleTextField.userInteractionEnabled=false
         notesTextView.userInteractionEnabled=false

@@ -34,8 +34,9 @@ class AddViewController: UIViewController {
     
     @IBAction func addButtonTapped(sender: AnyObject) {
         
-        var jsonStr : [String: AnyObject] = ["category":"\(categoryTxtF.text)", "question":"\(questionTxtV.text)"]
-        dataM.consumeAPI("https://whos-counting-1.appspot.com/_ah/api/whosCounting/v1/question", dict: jsonStr)  { (googleData) -> Void in
+        //var jsonStr : [String: AnyObject] = ["category":"[\(categoryTxtF.text)]", "question":"\(questionTxtV.text)"]
+        var jsonStr : [String: AnyObject] = ["question":"\(questionTxtV.text)"]
+        dataM.postAPIData("https://whos-counting-1.appspot.com/_ah/api/whoscounting/v1/question", parameters: jsonStr)  { (googleData) -> Void in
         }
     
         var userDefaults:NSUserDefaults = NSUserDefaults.standardUserDefaults()

@@ -66,10 +66,6 @@ class Question {
         
         askerDisplayName = dict.objectForKey("askerDisplayName") as! String
         websafeKey = dict.objectForKey("websafeKey") as! String
-        
-        println(id)
-        println("Entro a init questions")
-        
     }
     
     

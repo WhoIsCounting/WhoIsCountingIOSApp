@@ -42,7 +42,7 @@ class TblVwCell: UITableViewCell {
         
         
         var selectedIndexPath: NSIndexPath = indice
-        var question = dataM.questions[indice.row]
+        var question = dataM.NFquestions[indice.row]
         
         
         var count: Int
@@ -59,7 +59,7 @@ class TblVwCell: UITableViewCell {
         
         //Debug
         println("tapped index \(indice.row) and # \(count)")
-        println(" \(dataM.questions[indice.row].ido)")
+        println(" \(dataM.NFquestions[indice.row].ido)")
     }
 
 }

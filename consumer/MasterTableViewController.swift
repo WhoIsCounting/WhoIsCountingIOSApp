@@ -10,17 +10,16 @@ import UIKit
 import SwiftyJSON
 
 class MasterTableViewController: UITableViewController {
-    
-    var toDoItems:NSMutableArray = NSMutableArray()
-    
         
     required init(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         
         master = self
         dataM = DataManager()
+        
+        
+
     }
-    
     
     
     /*override init(style: UITableViewStyle) {
@@ -29,13 +28,6 @@ class MasterTableViewController: UITableViewController {
     
 
     override func viewDidAppear(animated: Bool) { //Es llamada cada vez que la vista aparece, mientras que viewDidLoad es llamada únicamente la primera vez
-        var userDefaults:NSUserDefaults = NSUserDefaults.standardUserDefaults()
-        var itemListFromUserDefaults:NSMutableArray? = userDefaults.objectForKey("itemList") as? NSMutableArray
-        
-        if (itemListFromUserDefaults != nil) {
-            toDoItems = itemListFromUserDefaults!
-        }
-        
         self.tableView.reloadData()
     }
     
@@ -56,8 +48,7 @@ class MasterTableViewController: UITableViewController {
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
         
         //Nuevo codigo reloading...
-       dataM.getQuestions()
-        
+        self.tableView.reloadData()
         
     }
 
@@ -81,7 +72,9 @@ class MasterTableViewController: UITableViewController {
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         //Acá debe colocarse el número de preguntas que se quiera mostrar y haya obtenido de la DB.
-        return dataM.questions.count
+        println(dataM.NFquestions.count)
+        return dataM.NFquestions.count
+        
     }
     
     
@@ -90,7 +83,7 @@ class MasterTableViewController: UITableViewController {
         let cell:TblVwCell = self.tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) as! TblVwCell
         cell.tvc = "master"
         //var toDoItem:NSDictionary = toDoItems.objectAtIndex(indexPath.row) as! NSDictionary
-        var question = dataM.questions[indexPath.row]
+        var question = dataM.NFquestions[indexPath.row]
         
         
         cell.labelOLName.text = "# \(question.ido) k"//Cambia segun el objeto
@@ -106,36 +99,6 @@ class MasterTableViewController: UITableViewController {
         return cell
     }
     
-    /*override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        //Acá debe colocarse el número de preguntas que se quiera mostrar y haya obtenido de la DB.
-        return toDoItems.count
-    }
-    
-    
-    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        
-        let cell:TblVwCell = self.tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) as! TblVwCell
-        cell.tvc = "master"
-        var toDoItem:NSDictionary = toDoItems.objectAtIndex(indexPath.row) as! NSDictionary
-        
-        
-        var count: Int
-        if (toDoItem.objectForKey("itemCount") != nil) {
-            count = toDoItem.objectForKey("itemCount")as! Int!
-        } else { count = 0}
-        
-        cell.labelOLName.text = "# \(count) k"
-        cell.tvOLName.text = toDoItem.objectForKey("itemTitle") as? String
-        cell.tvOLName.userInteractionEnabled = false;
-        
-        cell.buttonOLName.setTitle("I Did", forState: UIControlState.Normal) //Nombre del boton
-        
-        //Para actualizar la tabla desde la celda
-        cell.indice = indexPath
-        cell.toDoData = toDoItems.objectAtIndex(indexPath.row) as! NSMutableDictionary
-        
-        return cell
-    }*/
     
     override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat { //Método para darle altura a cada fila
         return 100

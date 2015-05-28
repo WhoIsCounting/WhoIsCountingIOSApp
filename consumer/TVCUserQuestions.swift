@@ -18,7 +18,7 @@ class TVCUserQuestions: UITableViewController {
     required init(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         userQ = self
-        
+        /* Descomentar luego por si funciona...
         dataM.consumeAPI("https://whos-counting-1.appspot.com/_ah/api/whosCounting/v1/getQuestionsCreated", dict: Dictionary()) { (googleData) -> Void in
             self.json = JSON(googleData)
             
@@ -53,7 +53,7 @@ class TVCUserQuestions: UITableViewController {
             
             //self.toDoItems = json["items"].array
             self.rows = self.json["items"].count
-        }
+        }*/
         
     }
     
