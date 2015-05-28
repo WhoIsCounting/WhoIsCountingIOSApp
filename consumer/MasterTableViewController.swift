@@ -13,19 +13,9 @@ class MasterTableViewController: UITableViewController {
         
     required init(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
-        
+    
         master = self
-        dataM = DataManager()
-        
-        
-
     }
-    
-    
-    /*override init(style: UITableViewStyle) {
-        super.init(style: style)
-    }*/
-    
 
     override func viewDidAppear(animated: Bool) { //Es llamada cada vez que la vista aparece, mientras que viewDidLoad es llamada únicamente la primera vez
         self.tableView.reloadData()
