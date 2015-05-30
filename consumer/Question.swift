@@ -14,7 +14,7 @@ class Question {
     var question: String = ""
     var count: String = "0"
     var answered: Bool = false
-    var category: [String]
+    var category = [String]()
     var id: String = ""
     var ido: Int = 0
     var popularity: Int = 0

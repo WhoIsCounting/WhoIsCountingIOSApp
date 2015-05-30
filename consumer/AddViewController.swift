@@ -34,8 +34,12 @@ class AddViewController: UIViewController {
     
     @IBAction func addButtonTapped(sender: AnyObject) {
         
+        var arrayStr = [String]()
+        arrayStr.append("hola")
+        arrayStr.append("adios")
+        var jsonStr : [String: AnyObject] = ["category":arrayStr, "question":"\(questionTxtV.text)"]
+        
         //var jsonStr : [String: AnyObject] = ["category":"[\(categoryTxtF.text)]", "question":"\(questionTxtV.text)"]
-        var jsonStr : [String: AnyObject] = ["question":"\(questionTxtV.text)"]
         dataM.postAPIData("https://whos-counting-1.appspot.com/_ah/api/whoscounting/v1/question", parameters: jsonStr)  { (googleData) -> Void in
         }
     

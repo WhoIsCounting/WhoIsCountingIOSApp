@@ -10,6 +10,8 @@ import UIKit
 import SwiftyJSON
 
 class MasterTableViewController: UITableViewController {
+    
+    var lQuestions = [Question]()
         
     required init(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
@@ -38,6 +40,7 @@ class MasterTableViewController: UITableViewController {
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
         
         //Nuevo codigo reloading...
+        lQuestions = dataM.NFquestions
         self.tableView.reloadData()
         
     }
@@ -61,10 +64,9 @@ class MasterTableViewController: UITableViewController {
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        //Acá debe colocarse el número de preguntas que se quiera mostrar y haya obtenido de la DB.
-        println(dataM.NFquestions.count)
-        return dataM.NFquestions.count
-        
+        //Devuelve el numero de filas de la tabla.
+        lQuestions = dataM.NFquestions
+        return lQuestions.count
     }
     
     
@@ -72,8 +74,9 @@ class MasterTableViewController: UITableViewController {
         
         let cell:TblVwCell = self.tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) as! TblVwCell
         cell.tvc = "master"
-        //var toDoItem:NSDictionary = toDoItems.objectAtIndex(indexPath.row) as! NSDictionary
-        var question = dataM.NFquestions[indexPath.row]
+        
+        //Asginar lista de preguntas
+        var question = lQuestions[indexPath.row]
         
         
         cell.labelOLName.text = "# \(question.ido) k"//Cambia segun el objeto
