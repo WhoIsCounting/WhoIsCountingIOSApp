@@ -26,6 +26,7 @@
 		A06648101A9BC02100DEDA3A /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A066480C1A9BC02100DEDA3A /* DataManager.swift */; };
 		A06648111A9BC02100DEDA3A /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A066480D1A9BC02100DEDA3A /* AppModel.swift */; };
 		FC2993DC1B178D4500143AFA /* InicioViewC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2993DB1B178D4500143AFA /* InicioViewC.swift */; };
+		FC70BF211B7E978800A9E4CB /* Notas.rtf in Resources */ = {isa = PBXBuildFile; fileRef = FC70BF201B7E978800A9E4CB /* Notas.rtf */; };
 		FCB3C4A81B0150A300942310 /* Pods.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5153254C20B479519E27D415 /* Pods.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
@@ -79,6 +80,7 @@
 		A066480C1A9BC02100DEDA3A /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		A066480D1A9BC02100DEDA3A /* AppModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppModel.swift; sourceTree = "<group>"; };
 		FC2993DB1B178D4500143AFA /* InicioViewC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InicioViewC.swift; sourceTree = "<group>"; };
+		FC70BF201B7E978800A9E4CB /* Notas.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = Notas.rtf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,24 +133,25 @@
 		A06647E71A9BAFA100DEDA3A /* consumer */ = {
 			isa = PBXGroup;
 			children = (
+				A01511731A9CE87900EB1296 /* Storyboard.storyboard */,
 				A001D6D31A9EAD49007FD131 /* SharedObjects.swift */,
+				A066480C1A9BC02100DEDA3A /* DataManager.swift */,
+				FC2993DB1B178D4500143AFA /* InicioViewC.swift */,
+				A01511741A9CE87900EB1296 /* MasterTableViewController.swift */,
 				A001D6D11A9E83DE007FD131 /* TVCUserQuestions.swift */,
 				A01511811A9D2CBE00EB1296 /* VCProfile.swift */,
 				A066480B1A9BC02100DEDA3A /* TopApps.json */,
-				A066480C1A9BC02100DEDA3A /* DataManager.swift */,
 				A066480D1A9BC02100DEDA3A /* AppModel.swift */,
 				A06647EA1A9BAFA100DEDA3A /* AppDelegate.swift */,
 				A06647F11A9BAFA200DEDA3A /* Images.xcassets */,
 				A06647F31A9BAFA200DEDA3A /* LaunchScreen.xib */,
-				A01511731A9CE87900EB1296 /* Storyboard.storyboard */,
-				A01511741A9CE87900EB1296 /* MasterTableViewController.swift */,
 				A01511751A9CE87900EB1296 /* TableViewCell.xib */,
 				A01511761A9CE87900EB1296 /* TblVwCell.swift */,
 				A01511771A9CE87900EB1296 /* AddViewController.swift */,
 				A01511781A9CE87900EB1296 /* DetailViewController.swift */,
 				A01511791A9CE87900EB1296 /* Question.swift */,
 				A06647E81A9BAFA100DEDA3A /* Supporting Files */,
-				FC2993DB1B178D4500143AFA /* InicioViewC.swift */,
+				FC70BF201B7E978800A9E4CB /* Notas.rtf */,
 			);
 			path = consumer;
 			sourceTree = "<group>";
@@ -275,6 +278,7 @@
 				A06647F51A9BAFA200DEDA3A /* LaunchScreen.xib in Resources */,
 				A06647F21A9BAFA200DEDA3A /* Images.xcassets in Resources */,
 				A066480F1A9BC02100DEDA3A /* TopApps.json in Resources */,
+				FC70BF211B7E978800A9E4CB /* Notas.rtf in Resources */,
 				A015117A1A9CE87900EB1296 /* Storyboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

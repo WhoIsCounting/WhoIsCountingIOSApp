@@ -9,14 +9,11 @@
 import UIKit
 
 class InicioViewC: UIViewController {
+    
     required init(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         
         dataM = DataManager()
         
-        
-        
     }
-    
-    
 }
