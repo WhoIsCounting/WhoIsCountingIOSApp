@@ -145,13 +145,13 @@
 				A01511781A9CE87900EB1296 /* QuestionDetailVC.swift */,
 				A01511761A9CE87900EB1296 /* QuestionTVCell.swift */,
 				A01511751A9CE87900EB1296 /* QuestionTVCell.xib */,
-				A066480B1A9BC02100DEDA3A /* TopApps.json */,
 				A06647EA1A9BAFA100DEDA3A /* AppDelegate.swift */,
-				A066480D1A9BC02100DEDA3A /* AppModel.swift */,
-				A06647F11A9BAFA200DEDA3A /* Images.xcassets */,
 				A06647F31A9BAFA200DEDA3A /* LaunchScreen.xib */,
-				A06647E81A9BAFA100DEDA3A /* Supporting Files */,
 				FC70BF201B7E978800A9E4CB /* Notas.rtf */,
+				A06647F11A9BAFA200DEDA3A /* Images.xcassets */,
+				A06647E81A9BAFA100DEDA3A /* Supporting Files */,
+				A066480D1A9BC02100DEDA3A /* AppModel.swift */,
+				A066480B1A9BC02100DEDA3A /* TopApps.json */,
 			);
 			path = consumer;
 			sourceTree = "<group>";

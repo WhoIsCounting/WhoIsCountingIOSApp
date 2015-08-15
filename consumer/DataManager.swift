@@ -71,10 +71,9 @@ class DataManager {
     
     func getAPIQueryQuestions() {
         //GET https://whos-counting-1.appspot.com/_ah/api/whoscounting/v1/questions/ido
-        
         postAPIData("https://whos-counting-1.appspot.com/_ah/api/whoscounting/v1/queryQuestions", parameters: Dictionary())  { (googleData) -> Void in
+        
             let json = JSON(googleData)
-
             if let items = json["items"].array{
                 for item in items{
                     self.NFquestions.append(Question(nsmdict: item.object as! NSMutableDictionary))
@@ -85,8 +84,8 @@ class DataManager {
     
     func getAPIGetQuestionsCreated() {
         postAPIData("https://whos-counting-1.appspot.com/_ah/api/whoscounting/v1/getQuestionsCreated", parameters: Dictionary()) { (googleData) -> Void in
-            let json = JSON(googleData)
             
+            let json = JSON(googleData)
             if let items = json["items"].array{
                 for item in items{
                     self.MYquestions.append(Question(nsmdict: item.object as! NSMutableDictionary))

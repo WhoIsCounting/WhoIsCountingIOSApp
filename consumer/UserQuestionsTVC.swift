@@ -15,7 +15,7 @@ class UserQuestionsTVC: UITableViewController {
     var json:JSON!
     var rows:Int = 0
     
-    
+    var lQuestions = [Question]()
     
     required init(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
@@ -64,8 +64,19 @@ class UserQuestionsTVC: UITableViewController {
     super.init(style: style)
     }*/
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        //Register custom cell
+        var nib = UINib(nibName: "QuestionTVCell", bundle: nil)
+        self.tableView.registerNib(nib, forCellReuseIdentifier: reusableCell_Id)
+        
+        lQuestions = dataM.MYquestions
+        
+        self.clearsSelectionOnViewWillAppear = false
+    }
     
-    override func viewDidAppear(animated: Bool) { //Es llamada cada vez que la vista aparece, mientras que viewDidLoad es llamada únicamente la primera vez
+    override func viewWillAppear(animated: Bool) { //Es llamada cada vez que la vista aparece, mientras que viewDidLoad es llamada únicamente la primera vez
         var userDefaults:NSUserDefaults = NSUserDefaults.standardUserDefaults()
         var itemListFromUserDefaults:NSMutableArray? = userDefaults.objectForKey("itemList") as? NSMutableArray
         
@@ -76,20 +87,7 @@ class UserQuestionsTVC: UITableViewController {
         self.tableView.reloadData()
     }
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        //Register custom cell
-        var nib = UINib(nibName: "QuestionTVCell", bundle: nil)
-        self.tableView.registerNib(nib, forCellReuseIdentifier: reusableCell_Id)
-        
-                
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-        
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
-    }
+    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -99,20 +97,13 @@ class UserQuestionsTVC: UITableViewController {
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         performSegueWithIdentifier("showDetail", sender: nil)
-        println("Cell tapped at News Feed TableView Controller") //Debug
+        println("Cell tapped at UserQuestionsTVC")
     }
     
-    // MARK: - Table view data source
-    
-    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        //Esta en la app debe de ser uno porque las secciones son como los encabezados de las letras en la lista de contactos
-        return 1
-    }
+    override func numberOfSectionsInTableView(tableView: UITableView) -> Int { return 1 }
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        //Acá debe colocarse el número de preguntas que se quiera mostrar y haya obtenido de la DB.
-        
-        return self.rows
+        return lQuestions.count
     }
     
     /*
@@ -143,26 +134,22 @@ class UserQuestionsTVC: UITableViewController {
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
-        let cell : QuestionTVCell = self.tableView.dequeueReusableCellWithIdentifier(reusableCell_Id, forIndexPath: indexPath) as! QuestionTVCell
-        //var toDoItem:NSDictionary = json["items"][indexPath.row].dictionaryObject!
+        let cell = self.tableView.dequeueReusableCellWithIdentifier(reusableCell_Id, forIndexPath: indexPath) as! QuestionTVCell
+        cell.tvc = "master"
         
-        if let toDoItem:NSDictionary = json["items"][0].dictionaryObject{
+        //Asginar lista de preguntas
+        var question = lQuestions[indexPath.row]
         
-        var count: Int
-        if (toDoItem.objectForKey("ido") != nil) {
-            count = toDoItem.objectForKey("ido") as! Int!
-        } else { count = 0}
         
-        cell.labelOLName.text = "# \(count) k"
-        cell.tvOLName.text = toDoItem.objectForKey("question") as? String
-        cell.tvOLName.userInteractionEnabled = false;
+        cell.qtyLabel.text = "# \(question.ido) k"//Cambia segun el objeto
+        cell.questionText.text = question.question
         
-        cell.buttonOLName.setTitle("I Did", forState: UIControlState.Normal) //Nombre del boton
+        cell.button.setTitle("I Did", forState: UIControlState.Normal) //Nombre del boton
         
         //Para actualizar la tabla desde la celda
         cell.indice = indexPath
-        cell.toDoData = toDoItems.objectAtIndex(indexPath.row)as! NSMutableDictionary
-        }
+        cell.toDoData = question.diccionario
+        
         return cell
     }
     

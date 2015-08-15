@@ -15,11 +15,10 @@ class QuestionTVCell: UITableViewCell {
         
     }
     
-
-    //@IBOutlet weak var buttonOLName: UIButton!
-    @IBOutlet weak var labelOLName: UILabel!
-    @IBOutlet weak var tvOLName: UITextView!
-    @IBOutlet weak var buttonOLName: UIButton!
+    @IBOutlet weak var qtyLabel: UILabel!
+    @IBOutlet weak var questionText: UITextView!
+    @IBOutlet weak var button: UIButton!
+    @IBOutlet weak var askerLabel: UILabel!
     
     var indice:NSIndexPath = NSIndexPath()
     var toDoData:NSMutableDictionary = NSMutableDictionary()
@@ -28,7 +27,6 @@ class QuestionTVCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
     }
 
     override func setSelected(selected: Bool, animated: Bool) {

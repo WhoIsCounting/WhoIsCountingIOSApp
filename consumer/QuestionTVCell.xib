@@ -24,7 +24,7 @@
                         <color key="textColor" red="0.50196081400000003" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Lorem ipsum dolor sit er elit lamet, consectetaur cillium olore magna aliqua?" translatesAutoresizingMaskIntoConstraints="NO" id="2OK-hH-j6z">
+                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Lorem ipsum dolor sit er elit lamet, consectetaur cillium olore magna aliqua?" translatesAutoresizingMaskIntoConstraints="NO" id="2OK-hH-j6z">
                         <rect key="frame" x="74" y="27" width="288" height="45"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -46,9 +46,10 @@
                 </subviews>
             </tableViewCellContentView>
             <connections>
-                <outlet property="buttonOLName" destination="HdW-Ea-GbB" id="yCC-tE-k6J"/>
-                <outlet property="labelOLName" destination="Szr-aB-HO4" id="ce0-Ng-g39"/>
-                <outlet property="tvOLName" destination="2OK-hH-j6z" id="DRm-7Z-ksb"/>
+                <outlet property="askerLabel" destination="Hnd-Gj-IOg" id="s7c-hA-n41"/>
+                <outlet property="button" destination="HdW-Ea-GbB" id="5dq-rE-vu8"/>
+                <outlet property="qtyLabel" destination="Szr-aB-HO4" id="eaX-qf-Hjx"/>
+                <outlet property="questionText" destination="2OK-hH-j6z" id="oYn-jA-OHr"/>
             </connections>
             <point key="canvasLocation" x="401" y="155"/>
         </tableViewCell>

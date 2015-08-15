@@ -15,17 +15,12 @@ class FeedTVC: UITableViewController {
         
     required init(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
-    
         master = self
     }
 
-    override func viewDidAppear(animated: Bool) { //Es llamada cada vez que la vista aparece, mientras que viewDidLoad es llamada únicamente la primera vez
-        self.tableView.reloadData()
-    }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         //Register custom cell
         let nib = UINib(nibName: "QuestionTVCell", bundle: nil)
         self.tableView.registerNib(nib, forCellReuseIdentifier: reusableCell_Id)
@@ -34,37 +29,28 @@ class FeedTVC: UITableViewController {
         lQuestions = dataM.NFquestions
         self.tableView.reloadData()
         
-        
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
-        
-        
+        self.clearsSelectionOnViewWillAppear = true
+        //Comentado porque no seran edititable de esa forma las preguntas.
+        //self.navigationItem.rightBarButtonItem = self.editButtonItem()
     }
-
+    
+    override func viewWillAppear(animated: Bool) {
+        self.tableView.reloadData()
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
-    
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         performSegueWithIdentifier("showDetail", sender: nil)
-        println("Cell tapped at News Feed TableView Controller") //Debug
+        println("Cell tapped at Feed")
     }
-
-    // MARK: - Table view data source
-
-    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        //Esta en la app debe de ser uno porque las secciones son como los encabezados de las letras en la lista de contactos
-        return 1
-    }
+    
+    override func numberOfSectionsInTableView(tableView: UITableView) -> Int { return 1 }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        //Devuelve el numero de filas de la tabla.
-        lQuestions = dataM.NFquestions
         return lQuestions.count
     }
     
@@ -79,11 +65,10 @@ class FeedTVC: UITableViewController {
         var question = lQuestions[indexPath.row]
         
         
-        cell.labelOLName.text = "# \(question.ido) k"//Cambia segun el objeto
-        cell.tvOLName.text = question.question
-        cell.tvOLName.userInteractionEnabled = false;
+        cell.qtyLabel.text = "# \(question.ido) k"//Cambia segun el objeto
+        cell.questionText.text = question.question
         
-        cell.buttonOLName.setTitle("I Did", forState: UIControlState.Normal) //Nombre del boton
+        cell.button.setTitle("I Did", forState: UIControlState.Normal) //Nombre del boton
         
         //Para actualizar la tabla desde la celda
         cell.indice = indexPath
