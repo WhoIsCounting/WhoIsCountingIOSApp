@@ -8,7 +8,7 @@
 
 import UIKit
 
-class AddViewController: UIViewController {
+class CreateQuestionVC: UIViewController {
 
     
     

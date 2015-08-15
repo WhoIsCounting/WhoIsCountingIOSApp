@@ -8,16 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		9696972A192D1D3FA8B859BC /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5153254C20B479519E27D415 /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
-		A001D6D21A9E83DE007FD131 /* TVCUserQuestions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A001D6D11A9E83DE007FD131 /* TVCUserQuestions.swift */; };
+		A001D6D21A9E83DE007FD131 /* UserQuestionsTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A001D6D11A9E83DE007FD131 /* UserQuestionsTVC.swift */; };
 		A001D6D41A9EAD49007FD131 /* SharedObjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = A001D6D31A9EAD49007FD131 /* SharedObjects.swift */; };
 		A015117A1A9CE87900EB1296 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A01511731A9CE87900EB1296 /* Storyboard.storyboard */; };
-		A015117B1A9CE87900EB1296 /* MasterTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01511741A9CE87900EB1296 /* MasterTableViewController.swift */; };
-		A015117C1A9CE87900EB1296 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A01511751A9CE87900EB1296 /* TableViewCell.xib */; };
-		A015117D1A9CE87900EB1296 /* TblVwCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01511761A9CE87900EB1296 /* TblVwCell.swift */; };
-		A015117E1A9CE87900EB1296 /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01511771A9CE87900EB1296 /* AddViewController.swift */; };
-		A015117F1A9CE87900EB1296 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01511781A9CE87900EB1296 /* DetailViewController.swift */; };
+		A015117B1A9CE87900EB1296 /* FeedTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01511741A9CE87900EB1296 /* FeedTVC.swift */; };
+		A015117C1A9CE87900EB1296 /* QuestionTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A01511751A9CE87900EB1296 /* QuestionTVCell.xib */; };
+		A015117D1A9CE87900EB1296 /* QuestionTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01511761A9CE87900EB1296 /* QuestionTVCell.swift */; };
+		A015117E1A9CE87900EB1296 /* CreateQuestionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01511771A9CE87900EB1296 /* CreateQuestionVC.swift */; };
+		A015117F1A9CE87900EB1296 /* QuestionDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01511781A9CE87900EB1296 /* QuestionDetailVC.swift */; };
 		A01511801A9CE87900EB1296 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01511791A9CE87900EB1296 /* Question.swift */; };
-		A01511821A9D2CBE00EB1296 /* VCProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01511811A9D2CBE00EB1296 /* VCProfile.swift */; };
+		A01511821A9D2CBE00EB1296 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01511811A9D2CBE00EB1296 /* ProfileVC.swift */; };
 		A06647EB1A9BAFA100DEDA3A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A06647EA1A9BAFA100DEDA3A /* AppDelegate.swift */; };
 		A06647F21A9BAFA200DEDA3A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A06647F11A9BAFA200DEDA3A /* Images.xcassets */; };
 		A06647F51A9BAFA200DEDA3A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A06647F31A9BAFA200DEDA3A /* LaunchScreen.xib */; };
@@ -25,7 +25,7 @@
 		A066480F1A9BC02100DEDA3A /* TopApps.json in Resources */ = {isa = PBXBuildFile; fileRef = A066480B1A9BC02100DEDA3A /* TopApps.json */; };
 		A06648101A9BC02100DEDA3A /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A066480C1A9BC02100DEDA3A /* DataManager.swift */; };
 		A06648111A9BC02100DEDA3A /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A066480D1A9BC02100DEDA3A /* AppModel.swift */; };
-		FC2993DC1B178D4500143AFA /* InicioViewC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2993DB1B178D4500143AFA /* InicioViewC.swift */; };
+		FC2993DC1B178D4500143AFA /* InicioVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2993DB1B178D4500143AFA /* InicioVC.swift */; };
 		FC70BF211B7E978800A9E4CB /* Notas.rtf in Resources */ = {isa = PBXBuildFile; fileRef = FC70BF201B7E978800A9E4CB /* Notas.rtf */; };
 		FCB3C4A81B0150A300942310 /* Pods.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5153254C20B479519E27D415 /* Pods.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
@@ -58,16 +58,16 @@
 		3E0A2655EA18865D90964C08 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		5153254C20B479519E27D415 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		799F5C022C7E2B5D109A33A3 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
-		A001D6D11A9E83DE007FD131 /* TVCUserQuestions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TVCUserQuestions.swift; sourceTree = "<group>"; };
+		A001D6D11A9E83DE007FD131 /* UserQuestionsTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserQuestionsTVC.swift; sourceTree = "<group>"; };
 		A001D6D31A9EAD49007FD131 /* SharedObjects.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SharedObjects.swift; sourceTree = "<group>"; };
 		A01511731A9CE87900EB1296 /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
-		A01511741A9CE87900EB1296 /* MasterTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasterTableViewController.swift; sourceTree = "<group>"; };
-		A01511751A9CE87900EB1296 /* TableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
-		A01511761A9CE87900EB1296 /* TblVwCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TblVwCell.swift; sourceTree = "<group>"; };
-		A01511771A9CE87900EB1296 /* AddViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
-		A01511781A9CE87900EB1296 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		A01511741A9CE87900EB1296 /* FeedTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedTVC.swift; sourceTree = "<group>"; };
+		A01511751A9CE87900EB1296 /* QuestionTVCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QuestionTVCell.xib; sourceTree = "<group>"; };
+		A01511761A9CE87900EB1296 /* QuestionTVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionTVCell.swift; sourceTree = "<group>"; };
+		A01511771A9CE87900EB1296 /* CreateQuestionVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateQuestionVC.swift; sourceTree = "<group>"; };
+		A01511781A9CE87900EB1296 /* QuestionDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionDetailVC.swift; sourceTree = "<group>"; };
 		A01511791A9CE87900EB1296 /* Question.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
-		A01511811A9D2CBE00EB1296 /* VCProfile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VCProfile.swift; sourceTree = "<group>"; };
+		A01511811A9D2CBE00EB1296 /* ProfileVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
 		A06647E51A9BAFA100DEDA3A /* consumer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = consumer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A06647E91A9BAFA100DEDA3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A06647EA1A9BAFA100DEDA3A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -79,7 +79,7 @@
 		A066480B1A9BC02100DEDA3A /* TopApps.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = TopApps.json; sourceTree = "<group>"; };
 		A066480C1A9BC02100DEDA3A /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		A066480D1A9BC02100DEDA3A /* AppModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppModel.swift; sourceTree = "<group>"; };
-		FC2993DB1B178D4500143AFA /* InicioViewC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InicioViewC.swift; sourceTree = "<group>"; };
+		FC2993DB1B178D4500143AFA /* InicioVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InicioVC.swift; sourceTree = "<group>"; };
 		FC70BF201B7E978800A9E4CB /* Notas.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = Notas.rtf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -136,20 +136,20 @@
 				A01511731A9CE87900EB1296 /* Storyboard.storyboard */,
 				A001D6D31A9EAD49007FD131 /* SharedObjects.swift */,
 				A066480C1A9BC02100DEDA3A /* DataManager.swift */,
-				FC2993DB1B178D4500143AFA /* InicioViewC.swift */,
-				A01511741A9CE87900EB1296 /* MasterTableViewController.swift */,
-				A001D6D11A9E83DE007FD131 /* TVCUserQuestions.swift */,
-				A01511811A9D2CBE00EB1296 /* VCProfile.swift */,
+				A01511791A9CE87900EB1296 /* Question.swift */,
+				FC2993DB1B178D4500143AFA /* InicioVC.swift */,
+				A01511741A9CE87900EB1296 /* FeedTVC.swift */,
+				A001D6D11A9E83DE007FD131 /* UserQuestionsTVC.swift */,
+				A01511811A9D2CBE00EB1296 /* ProfileVC.swift */,
+				A01511771A9CE87900EB1296 /* CreateQuestionVC.swift */,
+				A01511781A9CE87900EB1296 /* QuestionDetailVC.swift */,
+				A01511761A9CE87900EB1296 /* QuestionTVCell.swift */,
+				A01511751A9CE87900EB1296 /* QuestionTVCell.xib */,
 				A066480B1A9BC02100DEDA3A /* TopApps.json */,
-				A066480D1A9BC02100DEDA3A /* AppModel.swift */,
 				A06647EA1A9BAFA100DEDA3A /* AppDelegate.swift */,
+				A066480D1A9BC02100DEDA3A /* AppModel.swift */,
 				A06647F11A9BAFA200DEDA3A /* Images.xcassets */,
 				A06647F31A9BAFA200DEDA3A /* LaunchScreen.xib */,
-				A01511751A9CE87900EB1296 /* TableViewCell.xib */,
-				A01511761A9CE87900EB1296 /* TblVwCell.swift */,
-				A01511771A9CE87900EB1296 /* AddViewController.swift */,
-				A01511781A9CE87900EB1296 /* DetailViewController.swift */,
-				A01511791A9CE87900EB1296 /* Question.swift */,
 				A06647E81A9BAFA100DEDA3A /* Supporting Files */,
 				FC70BF201B7E978800A9E4CB /* Notas.rtf */,
 			);
@@ -274,7 +274,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A015117C1A9CE87900EB1296 /* TableViewCell.xib in Resources */,
+				A015117C1A9CE87900EB1296 /* QuestionTVCell.xib in Resources */,
 				A06647F51A9BAFA200DEDA3A /* LaunchScreen.xib in Resources */,
 				A06647F21A9BAFA200DEDA3A /* Images.xcassets in Resources */,
 				A066480F1A9BC02100DEDA3A /* TopApps.json in Resources */,
@@ -345,18 +345,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A015117F1A9CE87900EB1296 /* DetailViewController.swift in Sources */,
-				FC2993DC1B178D4500143AFA /* InicioViewC.swift in Sources */,
+				A015117F1A9CE87900EB1296 /* QuestionDetailVC.swift in Sources */,
+				FC2993DC1B178D4500143AFA /* InicioVC.swift in Sources */,
 				A001D6D41A9EAD49007FD131 /* SharedObjects.swift in Sources */,
-				A015117B1A9CE87900EB1296 /* MasterTableViewController.swift in Sources */,
-				A01511821A9D2CBE00EB1296 /* VCProfile.swift in Sources */,
-				A015117E1A9CE87900EB1296 /* AddViewController.swift in Sources */,
+				A015117B1A9CE87900EB1296 /* FeedTVC.swift in Sources */,
+				A01511821A9D2CBE00EB1296 /* ProfileVC.swift in Sources */,
+				A015117E1A9CE87900EB1296 /* CreateQuestionVC.swift in Sources */,
 				A06648101A9BC02100DEDA3A /* DataManager.swift in Sources */,
 				A01511801A9CE87900EB1296 /* Question.swift in Sources */,
-				A001D6D21A9E83DE007FD131 /* TVCUserQuestions.swift in Sources */,
+				A001D6D21A9E83DE007FD131 /* UserQuestionsTVC.swift in Sources */,
 				A06648111A9BC02100DEDA3A /* AppModel.swift in Sources */,
 				A06647EB1A9BAFA100DEDA3A /* AppDelegate.swift in Sources */,
-				A015117D1A9CE87900EB1296 /* TblVwCell.swift in Sources */,
+				A015117D1A9CE87900EB1296 /* QuestionTVCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

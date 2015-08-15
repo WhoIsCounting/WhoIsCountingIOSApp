@@ -8,10 +8,9 @@
 
 import UIKit
 
-class TblVwCell: UITableViewCell {
+class QuestionTVCell: UITableViewCell {
 
     required init(coder aDecoder: NSCoder) {
-        //self.tabla = MasterTableViewController(coder: aDecoder)
         super.init(coder: aDecoder)
         
     }

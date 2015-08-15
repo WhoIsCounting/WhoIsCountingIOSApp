@@ -8,7 +8,7 @@
 
 import UIKit
 
-class DetailViewController: UIViewController {
+class QuestionDetailVC: UIViewController {
 
     @IBOutlet weak var titleTextField: UITextField! = UITextField()
     @IBOutlet weak var notesTextView: UITextView! = UITextView()

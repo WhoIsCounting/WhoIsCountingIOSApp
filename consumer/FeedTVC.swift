@@ -9,7 +9,7 @@
 import UIKit
 import SwiftyJSON
 
-class MasterTableViewController: UITableViewController {
+class FeedTVC: UITableViewController {
     
     var lQuestions = [Question]()
         
@@ -26,11 +26,13 @@ class MasterTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        
         //Register custom cell
-        var nib = UINib(nibName: "TableViewCell", bundle: nil)
-        self.tableView.registerNib(nib, forCellReuseIdentifier: "cell")
+        let nib = UINib(nibName: "QuestionTVCell", bundle: nil)
+        self.tableView.registerNib(nib, forCellReuseIdentifier: reusableCell_Id)
         
+        //Nuevo codigo reloading...
+        lQuestions = dataM.NFquestions
+        self.tableView.reloadData()
         
         
         // Uncomment the following line to preserve selection between presentations
@@ -39,9 +41,6 @@ class MasterTableViewController: UITableViewController {
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
         
-        //Nuevo codigo reloading...
-        lQuestions = dataM.NFquestions
-        self.tableView.reloadData()
         
     }
 
@@ -72,7 +71,8 @@ class MasterTableViewController: UITableViewController {
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
-        let cell:TblVwCell = self.tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) as! TblVwCell
+        let cell = self.tableView.dequeueReusableCellWithIdentifier(reusableCell_Id, forIndexPath: indexPath) as! QuestionTVCell
+        
         cell.tvc = "master"
         
         //Asginar lista de preguntas
@@ -141,7 +141,7 @@ class MasterTableViewController: UITableViewController {
     
         if (segue != nil && segue!.identifier == "showDetail") {
             var selectedIndexPath: NSIndexPath = self.tableView.indexPathForSelectedRow()!
-            var detailViewController: DetailViewController = segue!.destinationViewController as! DetailViewController
+            var detailViewController: QuestionDetailVC = segue!.destinationViewController as! QuestionDetailVC
             detailViewController.row = selectedIndexPath.row
             
         }

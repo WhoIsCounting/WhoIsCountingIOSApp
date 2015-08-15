@@ -8,9 +8,10 @@
 
 import Foundation
 
-var master: MasterTableViewController!
-var userQ: TVCUserQuestions!
+var master: FeedTVC!
+var userQ: UserQuestionsTVC!
 var dataM: DataManager!
+let reusableCell_Id = "QuestionCell_Id"
 
 class SharedObjects{
 

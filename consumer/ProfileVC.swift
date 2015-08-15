@@ -9,7 +9,7 @@
 import UIKit
 import SwiftyJSON
 
-class VCProfile: UIViewController {
+class ProfileVC: UIViewController {
     
     @IBOutlet weak var displayNameTxtF: UITextField! = UITextField()
     @IBOutlet weak var mainEmailTxtF: UITextField! = UITextField()

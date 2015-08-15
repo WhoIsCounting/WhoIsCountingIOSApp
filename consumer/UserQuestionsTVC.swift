@@ -9,15 +9,18 @@
 import UIKit
 import SwiftyJSON
 
-class TVCUserQuestions: UITableViewController {
+class UserQuestionsTVC: UITableViewController {
 
     var toDoItems:NSMutableArray = NSMutableArray()
     var json:JSON!
     var rows:Int = 0
     
+    
+    
     required init(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         userQ = self
+        
         /* Descomentar luego por si funciona...
         dataM.consumeAPI("https://whos-counting-1.appspot.com/_ah/api/whosCounting/v1/getQuestionsCreated", dict: Dictionary()) { (googleData) -> Void in
             self.json = JSON(googleData)
@@ -76,16 +79,11 @@ class TVCUserQuestions: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
         //Register custom cell
-        var nib = UINib(nibName: "TableViewCell", bundle: nil)
-        self.tableView.registerNib(nib, forCellReuseIdentifier: "cell")
+        var nib = UINib(nibName: "QuestionTVCell", bundle: nil)
+        self.tableView.registerNib(nib, forCellReuseIdentifier: reusableCell_Id)
         
-        
-        
-        
-        
-        
+                
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
         
@@ -145,7 +143,7 @@ class TVCUserQuestions: UITableViewController {
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
-        let cell:TblVwCell = self.tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) as! TblVwCell
+        let cell : QuestionTVCell = self.tableView.dequeueReusableCellWithIdentifier(reusableCell_Id, forIndexPath: indexPath) as! QuestionTVCell
         //var toDoItem:NSDictionary = json["items"][indexPath.row].dictionaryObject!
         
         if let toDoItem:NSDictionary = json["items"][0].dictionaryObject{
@@ -217,7 +215,7 @@ class TVCUserQuestions: UITableViewController {
         
         if (segue != nil && segue!.identifier == "showDetail") {
             var selectedIndexPath: NSIndexPath = self.tableView.indexPathForSelectedRow()!
-            var detailViewController: DetailViewController = segue!.destinationViewController as! DetailViewController
+            var detailViewController: QuestionDetailVC = segue!.destinationViewController as! QuestionDetailVC
             detailViewController.row = selectedIndexPath.row
         }
     }
