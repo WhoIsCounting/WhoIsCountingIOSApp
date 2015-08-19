@@ -52,8 +52,8 @@ class QuestionTVCell: UITableViewCell {
         }
         
         //Debug
-        //println("tapped index \(indice.row) and # \(count)")
-        //println(" \(question.ido)")
+        println("tapped index \(indice.row) and # \(count)")
+        println(" \(question.ido)")
     }
 
 }

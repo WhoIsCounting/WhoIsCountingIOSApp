@@ -43,27 +43,26 @@ class DataManager {
             if (error != nil) {
                 
                 println("Error (lx) " + error!.localizedDescription )
-                println(response!)
+                //println(response!)//Print del JSON de error.
             } else {
                 
-                println("Success (lx)")
-                println(response!)
+                //println(response!)//Print del JSON de respuesta
                 success(responseData: response!)
             }
         })
     }
     
-    func getAPIData(url: String,success: ((responseData: AnyObject!) -> Void)){
-        self.http.GET(url, completionHandler: {(response, error) in
-            println("GET Method getAPIData Done LX")
+    func getAPIData(url: String, success: (responseData: AnyObject!) -> Void) {
+        
+        self.http.GET(url, completionHandler: { (response, error) in
+            println("LX: DataManager.getAPIData()")
+            
             if (error != nil) {
-                //self.presentAlert("Error", message: error!.localizedDescription)
+                
                 println("Error" + error!.localizedDescription)
                 success(responseData: nil)
             } else {
-                //self.presentAlert("Success", message: "Successfully uploaded!")
                 //println("Success \n\(response!)")
-                
                 success(responseData: response!)
             }
         })

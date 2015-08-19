@@ -144,6 +144,8 @@ class UserQuestionsTVC: UITableViewController {
         cell.qtyLabel.text = "# \(question.ido) k"//Cambia segun el objeto
         cell.questionText.text = question.question
         
+        cell.askerLabel.text = "@"+question.askerDisplayName
+        
         cell.button.setTitle("I Did", forState: UIControlState.Normal) //Nombre del boton
         
         //Para actualizar la tabla desde la celda
