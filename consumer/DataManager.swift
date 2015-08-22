@@ -54,14 +54,18 @@ class DataManager {
     
     func getAPIData(url: String, success: (responseData: AnyObject!) -> Void) {
         
-        self.http.GET(url, completionHandler: { (response, error) in
+        self.http.GET(url, completionHandler: {
+            (response, error) in
+            
             println("LX: DataManager.getAPIData()")
             
             if (error != nil) {
                 
                 println("Error" + error!.localizedDescription)
                 success(responseData: nil)
+                
             } else {
+                
                 //println("Success \n\(response!)")
                 success(responseData: response!)
             }
@@ -70,9 +74,11 @@ class DataManager {
     
     func getAPIQueryQuestions() {
         //GET https://whos-counting-1.appspot.com/_ah/api/whoscounting/v1/questions/ido
-        postAPIData("https://whos-counting-1.appspot.com/_ah/api/whoscounting/v1/queryQuestions", parameters: Dictionary())  { (googleData) -> Void in
         
-            let json = JSON(googleData)
+        postAPIData("https://whos-counting-1.appspot.com/_ah/api/whoscounting/v1/queryQuestions", parameters: Dictionary())
+            { (returnedData) -> Void in
+        
+            let json = JSON(returnedData)
             if let items = json["items"].array{
                 for item in items{
                     self.NFquestions.append(Question(nsmdict: item.object as! NSMutableDictionary))
